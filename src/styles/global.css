@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Custom Font Families */
+@layer base {
+  /* Raleway pour les textes */
+  .font-raleway {
+    font-family: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 400, 500, 600, 700, 800, 900;
+  }
+  
+  /* Impact pour les titres */
+  .font-impact {
+    font-family: 'Impact', 'Arial Black', Arial, sans-serif;
+    font-weight: 400, 500, 600, 700, 800, 900;
+  }
+}
+
+/* Utilitaires personnalisés */
+@layer utilities {
+    .text-shadow {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .text-shadow-lg {
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    }
+    .gradient-blue-green {
+        background: linear-gradient(135deg, #008AEF 0%, #12EF97 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+
+}
+
+@theme {
+    --color-dark-blue: #2B2F3B;
+    --color-blue: #008AEF;
+    --color-blue-green: #12EF97;
+}

@@ -1,0 +1,158 @@
+---
+// Footer The Padel - version fidèle à la maquette mobile
+---
+
+<!-- Section Application Mobile -->
+<section class="w-full bg-[#2B2E36] pt-12 pb-24 px-4 flex flex-col items-center">
+  <!-- Titre -->
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-impact font-bold uppercase text-center mb-8">
+    <span class="text-white">NOTRE</span> <span class="text-[#008AEF]">APPLICATION</span>
+  </h2>
+  <!-- Texte -->
+  <div class="text-white font-raleway text-lg text-center mb-8 max-w-2xl">
+    <p>Réservez un terrain en quelques clics sur notre site web ou notre application mobile.</p>
+    <p class="mt-4">Inscrivez vous à nos compétitions passionnants et montrez tout l'étendu de votre talent.</p>
+  </div>
+  <!-- Bouton -->
+  <a href="#" class="inline-block bg-[#12EF97] hover:bg-[#10d085] text-[#222] font-impact text-lg uppercase rounded-md px-8 py-4 font-bold mb-10 transition-colors duration-200 shadow-md" style="letter-spacing:0.5px;">
+    TÉLÉCHARGER L'APPLICATION
+  </a>
+  <!-- Bloc image mockup -->
+  <div class="w-full max-w-2xl rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-[#00C6FB] to-[#005BEA] p-0 mb-0">
+    <img src="/src/assets/application.png" alt="Mockup application mobile The Padel" class="w-full h-auto object-cover" />
+  </div>
+</section>
+
+<!-- Carrousel Footer -->
+<section class="w-full bg-[#2B2E36] flex flex-col items-center pb-12 px-4">
+  <div class="w-full max-w-3xl relative">
+    <!-- Slide principale -->
+    <div id="footer-carousel-slide" class="rounded-t-2xl overflow-hidden shadow-lg relative bg-black">
+      <img id="footer-carousel-img" src="/src/assets/thumbnails/slider-footer/thumb2-tournoi.png" alt="Tournoi" class="w-full h-[220px] object-cover" />
+      <!-- Overlay gradient pour effet visuel -->
+      <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(180deg,rgba(0,0,0,0) 10%,rgba(0,138,239,0.85) 100%);"></div>
+      <!-- Gradient titre -->
+      <div class="absolute bottom-0 left-0 w-full h-1/3 flex items-end">
+        <div class="pl-8 pb-8">
+          <span id="footer-carousel-title" class="text-3xl sm:text-4xl font-impact font-bold uppercase text-white px-4 py-2 rounded-lg">Tournoi</span>
+        </div>
+      </div>
+    </div>
+    <!-- Flèches (par-dessus le slider) -->
+    <div class="absolute -bottom-5 right-5 flex gap-3 z-20">
+      <button id="footer-carousel-prev" class="w-10 h-10 bg-[#12EF97] hover:bg-[#10d085] rounded-xl flex items-center justify-center text-[#2B2E36] text-2xl font-bold shadow-md transition" aria-label="Précédent">
+        <svg width="24" height="24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button id="footer-carousel-next" class="w-10 h-10 bg-[#12EF97] hover:bg-[#10d085] rounded-xl flex items-center justify-center text-[#2B2E36] text-2xl font-bold shadow-md transition" aria-label="Suivant">
+        <svg width="24" height="24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Section Réserver un terrain -->
+<section class="w-full bg-[#2B2E36] py-12 px-4 flex flex-col items-start max-w-3xl mx-auto">
+  <h2 class="text-2xl sm:text-3xl md:text-4xl font-impact uppercase text-white mb-6 text-left leading-tight">
+    VIVEZ LA PASSION DU PADEL AVEC<br>NOUS EN GIRONDE
+  </h2>
+  <p class="text-white font-raleway mb-8 text-left max-w-2xl">
+    Profitez d'infrastructures modernes et d'une ambiance conviviale dans notre centre près de Bordeaux.
+  </p>
+  <a href="#" class="inline-block bg-[#12EF97] hover:bg-[#10d085] text-[#222] font-impact text-lg uppercase rounded-md px-8 py-3 font-bold transition-colors duration-200 shadow-md" style="letter-spacing:0.5px;">
+    RÉSERVER UN TERRAIN
+  </a>
+</section>
+
+<script is:inline>
+const slides = [
+  {
+    img: '/src/assets/thumbnails/slider-footer/thumb2-tournoi.png',
+    title: 'Tournoi',
+  },
+  {
+    img: '/src/assets/thumbnails/slider-footer/thumb2-shop.png',
+    title: 'Boutique',
+  },
+  {
+    img: '/src/assets/thumbnails/slider-footer/thumb2-team.png',
+    title: "L'équipe",
+  },
+  {
+    img: '/src/assets/thumbnails/slider-footer/thumb1-sponsor.png',
+    title: 'Sponsor',
+  },
+];
+let current = 0;
+const img = document.getElementById('footer-carousel-img');
+const title = document.getElementById('footer-carousel-title');
+const prev = document.getElementById('footer-carousel-prev');
+const next = document.getElementById('footer-carousel-next');
+function showSlide(idx) {
+  img.src = slides[idx].img;
+  img.alt = slides[idx].title;
+  title.textContent = slides[idx].title;
+}
+prev.addEventListener('click', () => {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+});
+next.addEventListener('click', () => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+});
+// Init
+showSlide(current);
+</script>
+
+<footer class="bg-[#2B2E36] w-full pt-12 pb-8 px-4 flex flex-col items-center">
+  <!-- Logo The Padel (SVG ou image) -->
+  <div class="mb-8">
+    <img src="/src/assets/logo-color.svg" alt="The Padel" class="w-32 sm:w-40 mx-auto mb-2" />
+  </div>
+
+  <!-- Bas du footer aligné à gauche -->
+  <div class="w-full max-w-3xl mx-auto flex flex-col md:flex-row gap-12 pt-8 pb-4 px-4">
+    <!-- Infos club -->
+    <div class="flex-1 min-w-[220px]">
+      <div class="text-white font-raleway text-base mb-6">
+        <div class="flex items-start gap-2 mb-1">
+          <svg class="w-5 h-5 text-[#12EFED] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
+          <div class="flex flex-col gap-2">
+            <span><span class="font-bold">Club :</span> 212 Av du Maréchal Leclerc, 33130 Bègles</span>
+            <span><span class="font-bold">Siège social :</span> 20 Avenue Jean Mermoz, 33185 LE HAILLAN</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <svg class="w-5 h-5 text-[#12EFED] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
+          06 67 45 40 70
+        </div>
+        <div class="mb-1 ml-6.5 mt-4">
+          Lun - Ven : <span class="text-[#12EFED] font-semibold">6h30 - 23h30</span>
+        </div>
+        <div class="ml-6.5 mt-1">
+          Sam - Dim : <span class="text-[#12EFED] font-semibold">6h30 - 23h30</span>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation avec barre gradient -->
+    <div class="flex-1 flex flex-row items-start gap-4">
+      <div class="w-1 h-full rounded-full mt-1" style="background: linear-gradient(180deg, #008AEF 0%, #12EF97 100%);"></div>
+      <nav class="flex flex-col gap-3 text-lg font-impact uppercase text-white">
+        <a href="/" class="hover:text-[#12EF97] transition">Accueil</a>
+        <a href="/tournoi" class="hover:text-[#12EF97] transition">Tournoi</a>
+        <a href="/boutique" class="hover:text-[#12EF97] transition">Boutique</a>
+        <a href="/equipe" class="hover:text-[#12EF97] transition">L'équipe The Padel</a>
+        <a href="/contact" class="hover:text-[#12EF97] transition">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-blue-100 font-raleway text-xs text-center opacity-80">
+    © 2024 The Padel. Tous droits réservés.
+  </div>
+</footer> 
