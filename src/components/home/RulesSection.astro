@@ -1,0 +1,66 @@
+---
+// Rules section for padel rules
+---
+
+<section class="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-blue flex flex-col lg:flex-row items-start py-16 bg-padel-terrain-section lg:py-16">
+  <div class="w-full max-w-7xl px-4 lg:px-4 flex flex-col lg:flex-row gap-12 lg:gap-16 mx-auto">
+    <!-- Colonne gauche -->
+    <div class="flex-1 flex flex-col gap-8 lg:gap-12">
+      <h2 class="text-white text-3xl sm:text-4xl md:text-5xl font-impact font-bold uppercase text-left mb-4 drop-shadow-lg lg:mb-0">
+        LES RÈGLES DU PADEL
+      </h2>
+      <!-- Texte principal -->
+      <div class="text-white font-raleway leading-relaxed">
+        Le padel, sport en plein essor en France et particulièrement en Gironde, est une discipline de raquette qui combine habilement des aspects du tennis, du squash et du badminton. Pratiqué sur un terrain de 20 mètres par 10, entouré de vitres en verre trempé et de grillage métallique, ce cadre unique fait partie intégrante du jeu et offre des rebonds spectaculaires.<br/><br/>
+        Les raquettes de padel, appelées aussi "pala", sont pleines, sans cordage, et dotées de perforations permettant une meilleure maniabilité. Les balles utilisées ressemblent à celles du tennis, mais elles sont légèrement dépressurisées pour mieux convenir aux spécificités du padel.
+      </div>
+      <!-- Image 1 -->
+      <div class="w-full">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+          <img src="/src/assets/thumbnails/thumb1-rules.png" alt="Raquette de padel" class="w-full object-cover" style="aspect-ratio: 16/9;" />
+        </div>
+      </div>
+    </div>
+    <!-- Colonne droite -->
+    <div class="flex-1 flex flex-col gap-8 lg:gap-12 ">
+      <!-- Image 2 -->
+      <div class="w-full">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+          <img src="/src/assets/thumbnails/thumb2-rules.png" alt="Terrain de padel vu du dessus" class="w-full object-cover" style="aspect-ratio: 16/9;" />
+        </div>
+      </div>
+      <!-- Bloc texte 2 -->
+      <div class="rounded-2xl md:p-8 lg:p-0">
+        <div class="text-white font-raleway leading-relaxed lg:mt-12">
+          Le padel se joue essentiellement en double, soit deux équipes de deux joueurs. Le service s'effectue à la cuillère, derrière la ligne de service, et la balle doit rebondir dans la zone de service opposée. Le comptage des points est identique à celui du tennis, avec des sets en six jeux (écart de deux jeux requis pour remporter un set).<br/><br/>
+          Une des particularités du padel est la possibilité d'utiliser les murs après le rebond au sol, ce qui rend les échanges plus dynamiques et stratégiques. En revanche, une faute est commise si la balle rebondit deux fois au sol ou si elle touche directement le mur ou le grillage avant de franchir le filet.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bg-padel-terrain-section {
+    position: relative;
+    z-index: 1;
+  }
+  .bg-padel-terrain-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/src/assets/bg-terrain.svg');
+    background-size: cover;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    opacity: 0.18;
+    pointer-events: none;
+    z-index: -1;
+  }
+  @media (min-width: 1024px) {
+    .bg-padel-terrain-section::before {
+      background-position: center;
+      background-image: url('/src/assets/bg-terrain-desktop.svg');
+    }
+  }
+</style> 

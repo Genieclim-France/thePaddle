@@ -1,0 +1,149 @@
+---
+---
+<form id="contact-form" class="bg-white rounded-2xl shadow-lg border-4 border-blue-400/80 p-10 max-w-xl w-full mx-2 space-y-8 backdrop-blur-sm self-start" novalidate>
+  <!-- Demande -->
+  <div>
+    <label class="block font-bold text-lg text-black mb-1" for="demand">
+      Demande
+      <span class="font-normal text-gray-400 text-sm ml-2">Choisissez une option</span>
+    </label>
+    <div class="relative">
+      <select id="demand" name="demand" required class="w-full border-2 border-gray-200 rounded-xl py-2 px-3 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-all shadow-sm focus:shadow-lg bg-white/90 placeholder-gray-400">
+        <option value="">Sélectionnez…</option>
+        <option>Demande de devis/tarifs</option>
+        <option>Demande d'information</option>
+        <option>Autre</option>
+      </select>
+    </div>
+    <p class="mt-1 text-xs text-red-500 hidden" id="error-demand">Veuillez choisir une option.</p>
+  </div>
+
+  <!-- Précisions -->
+  <div>
+    <label class="block font-bold text-lg text-black mb-1" for="details">
+      Précisions
+      <span class="font-normal text-gray-400 text-sm ml-2">Précisez votre demande</span>
+    </label>
+    <textarea id="details" name="details" rows="4" class="w-full border-2 border-gray-200 rounded-xl py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-all shadow-sm focus:shadow-lg bg-white/90 placeholder-gray-400" placeholder="Bonjour, je souhaite obtenir un devis pour…"></textarea>
+  </div>
+
+  <hr class="border-t border-blue-100 my-4" />
+
+  <!-- Nom/Prénom -->
+  <div>
+    <label class="block font-bold text-lg text-black mb-1" for="name">Nom/Prénom<span class="text-red-500">*</span></label>
+    <input id="name" name="name" type="text" required class="w-full border-2 border-gray-200 rounded-xl py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-all shadow-sm focus:shadow-lg bg-white/90 placeholder-gray-400" placeholder="Votre nom et prénom" />
+    <p class="mt-1 text-xs text-red-500 hidden" id="error-name">Ce champ est obligatoire.</p>
+  </div>
+
+  <!-- Téléphone -->
+  <div>
+    <label class="block font-bold text-lg text-black mb-1" for="phone">Téléphone<span class="text-red-500">*</span></label>
+    <input id="phone" name="phone" type="tel" required pattern="^0[6-7](\s?\d{2}){4}$" class="w-full border-2 border-gray-200 rounded-xl py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-all shadow-sm focus:shadow-lg bg-white/90 placeholder-gray-400" placeholder="07 ## ## ## ##" />
+    <p class="mt-1 text-xs text-red-500 hidden" id="error-phone">Numéro invalide (ex: 07 12 34 56 78).</p>
+  </div>
+
+  <!-- Email -->
+  <div>
+    <label class="block font-bold text-lg text-black mb-1" for="email">Email<span class="text-red-500">*</span></label>
+    <input id="email" name="email" type="email" required class="w-full border-2 border-gray-200 rounded-xl py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-all shadow-sm focus:shadow-lg bg-white/90 placeholder-gray-400" placeholder="votre.email@exemple.fr" />
+    <p class="mt-1 text-xs text-red-500 hidden" id="error-email">Adresse email invalide.</p>
+  </div>
+
+  <!-- Consentement -->
+  <div class="flex items-start">
+    <input id="consent" name="consent" type="checkbox" required class="mt-1 accent-blue-400 border-2 border-gray-300 rounded focus:ring-2 focus:ring-blue-400 transition-all" />
+    <label for="consent" class="ml-3 text-gray-700 text-sm">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre strict de ma demande<span class="text-red-500">*</span></label>
+  </div>
+  <p class="mt-1 text-xs text-red-500 hidden" id="error-consent">Vous devez accepter les conditions.</p>
+
+  <!-- Bouton envoyer -->
+  <button type="submit" id="submit-btn"
+    class="w-full bg-green-400 hover:bg-green-500 active:bg-green-600 text-black font-bold py-3 rounded-xl text-lg transition-all duration-150 flex items-center justify-center shadow-md hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed mt-2">
+    <span id="btn-text">ENVOYER</span>
+    <svg id="btn-loader" class="animate-spin h-5 w-5 ml-2 text-black hidden" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
+  </button>
+
+  <!-- Note obligatoire -->
+  <p class="text-gray-400 text-xs mt-2">*Ces champs sont obligatoires</p>
+  <p id="success-message" class="text-green-600 text-center font-bold text-lg py-4 hidden transition-all duration-500">Merci, votre demande a bien été envoyée !</p>
+</form>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contact-form');
+  const btn = document.getElementById('submit-btn');
+  const btnText = document.getElementById('btn-text');
+  const btnLoader = document.getElementById('btn-loader');
+  const successMsg = document.getElementById('success-message');
+  let formTried = false;
+
+  // Champs et erreurs
+  const fields = [
+    { id: 'demand', error: 'error-demand', required: true },
+    { id: 'name', error: 'error-name', required: true },
+    { id: 'phone', error: 'error-phone', required: true, pattern: /^0[6-7](\s?\d{2}){4}$/ },
+    { id: 'email', error: 'error-email', required: true, pattern: /^[^@]+@[^@]+\.[^@]+$/ },
+    { id: 'consent', error: 'error-consent', required: true, isCheckbox: true }
+  ];
+
+  // Désactivation temporaire de la validation pour debug
+  fields.forEach(field => {
+    const el = document.getElementById(field.id);
+    if (field.isCheckbox) {
+      el?.addEventListener('change', () => {});
+    } else {
+      el?.addEventListener('input', () => {});
+      el?.addEventListener('blur', () => {});
+    }
+  });
+
+  // Le bouton est toujours actif
+  (btn as HTMLButtonElement).disabled = false;
+
+  form?.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    // formTried = true;
+    // if (!validateForm()) return;
+    (btn as HTMLButtonElement).disabled = true;
+    btnText?.classList.add('hidden');
+    btnLoader?.classList.remove('hidden');
+
+    // Récupère les données du formulaire
+    const data = {
+      demand: (document.getElementById('demand') as HTMLSelectElement).value,
+      details: (document.getElementById('details') as HTMLTextAreaElement).value,
+      name: (document.getElementById('name') as HTMLInputElement).value,
+      phone: (document.getElementById('phone') as HTMLInputElement).value,
+      email: (document.getElementById('email') as HTMLInputElement).value,
+    };
+
+    try {
+      const res = await fetch('/api/send-mail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        btnText?.classList.remove('hidden');
+        btnLoader?.classList.add('hidden');
+        (form as HTMLFormElement).reset();
+        (btn as HTMLButtonElement).disabled = false;
+        successMsg?.classList.remove('hidden');
+        // formTried = false;
+        setTimeout(() => successMsg?.classList.add('hidden'), 4000);
+      } else {
+        alert('Erreur lors de l’envoi du message.');
+        btnText?.classList.remove('hidden');
+        btnLoader?.classList.add('hidden');
+        (btn as HTMLButtonElement).disabled = false;
+      }
+    } catch (err) {
+      alert('Erreur lors de l’envoi du message.');
+      btnText?.classList.remove('hidden');
+      btnLoader?.classList.add('hidden');
+      (btn as HTMLButtonElement).disabled = false;
+    }
+  });
+});
+</script>

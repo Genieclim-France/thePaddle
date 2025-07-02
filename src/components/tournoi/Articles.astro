@@ -1,0 +1,180 @@
+---
+// Component for tournament articles section
+---
+
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-8">
+    <!-- Content layout: text left, images right on desktop -->
+    <div class="flex flex-col lg:flex-row lg:items-center gap-12 2xl:gap-32 items-start">
+      <!-- Text content - Left side -->
+      <div class="flex-1 flex flex-col gap-6">
+        <!-- Main heading -->
+        <h1 class="text-4xl md:text-6xl font-impact font-black leading-tight text-gray-800 uppercase tracking-tight mb-6">
+          DES TOURNOIS DE PADEL<br>
+          PROCHE <span class="text-blue-500">DE BORDEAUX</span>
+        </h1>
+        <p class="text-lg leading-relaxed text-gray-800 font-medium">
+          Les amoureux du padel à Bordeaux et ses alentours peuvent 
+          participer à nos tournois. Contactez-nous pour en savoir 
+          plus à ce sujet.
+        </p>
+
+        <p class="text-lg leading-relaxed text-gray-800">
+          Pour connaître nos tarifs, appelez-nous au 
+          <a href="tel:0744975422" class="text-blue-500 hover:text-blue-600 font-semibold transition-colors duration-300 no-underline">
+            📞 07 44 97 54 22
+          </a>
+        </p>
+
+        <p class="text-base leading-relaxed text-gray-600">
+          Amateurs et joueurs aguerris de padel, les tournois que nous 
+          organisons sont faits pour vous ! Chaque mois, nos 
+          événements rassemblent des passionnés dans une ambiance 
+          conviviale et compétitive. Les matchs ont lieu sur nos terrains. Ces 
+          rencontres sont une excellente occasion de mesurer vos 
+          compétences et de jouer contre des adversaires variés.
+        </p>
+
+        <p class="text-base leading-relaxed text-gray-600">
+          Découvrez le calendrier des prochains tournois et ne manquez 
+          pas l'opportunité de vivre <span class="font-semibold text-gray-800">des moments mémorables.</span>
+        </p>
+      </div>
+
+      <!-- Image bento grid - Right side -->
+      <div class="flex-1 flex gap-6 h-[500px]">
+        <!-- Grande image à gauche -->
+        <div class="flex-1 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+          <img 
+            src="/src/assets/thumbnails/tournoi/thumb-1-tournoi.png" 
+            alt="Joueuse de padel en action" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        
+        <!-- Deux images empilées à droite -->
+        <div class="flex-1 flex flex-col gap-6">
+          <div class="flex-1 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+            <img 
+              src="/src/assets/thumbnails/tournoi/thumb-2-tournoi.png" 
+              alt="Joueur de padel souriant" 
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="flex-1 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+            <img 
+              src="/src/assets/thumbnails/tournoi/thumb-3-tournoi.png" 
+              alt="Mère et fille avec raquettes de padel" 
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Section des cartes colorées -->
+<section class="py-16 bg-gray-900">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="flex flex-col lg:flex-row gap-6">
+      
+      <!-- Carte Challenge - Bleu -->
+      <div class="flex-1 bg-blue-500 rounded-2xl p-6 pb-0 relative overflow-hidden flex flex-col min-h-[400px]">
+        <div class="text-white z-10">
+          <h3 class="text-2xl lg:text-3xl font-black uppercase mb-4 tracking-wide">CHALLENGE</h3>
+          <p class="text-sm lg:text-base leading-relaxed opacity-90 mb-6">
+            Relevez des défis palpitants et testez votre niveau dans 
+            une ambiance conviviale et compétitive.
+          </p>
+        </div>
+        <div class="mt-auto">
+          <img 
+            src="/src/assets/thumbnails/tournoi/thumb-1-player.png" 
+            alt="Joueur de padel relevant un défi" 
+            class="w-full h-auto object-contain"
+          />
+        </div>
+      </div>
+
+      <!-- Carte Classement - Cyan -->
+      <div class="flex-1 bg-cyan-400 rounded-2xl p-6 pb-0 relative overflow-hidden flex flex-col min-h-[400px]">
+        <div class="text-gray-800 z-10">
+          <h3 class="text-2xl lg:text-3xl font-black uppercase mb-4 tracking-wide">CLASSEMENT</h3>
+          <p class="text-sm lg:text-base leading-relaxed mb-6">
+            Faites évoluer votre classement chez THE PADEL tout au 
+            long de la saison grâce à nos tournois mensuels.
+          </p>
+        </div>
+        <div class="mt-auto">
+          <img 
+            src="/src/assets/thumbnails/tournoi/thumb-2-player.png" 
+            alt="Joueur de padel souriant" 
+            class="w-full h-auto object-contain"
+          />
+        </div>
+      </div>
+
+      <!-- Carte Communauté - Vert -->
+      <div class="flex-1 bg-green-400 rounded-2xl p-6 pb-0 relative overflow-hidden flex flex-col min-h-[400px]">
+        <div class="text-gray-800 z-10">
+          <h3 class="text-2xl lg:text-3xl font-black uppercase mb-4 tracking-wide">COMMUNAUTÉ</h3>
+          <p class="text-sm lg:text-base leading-relaxed mb-6">
+            Rejoignez une communauté de passionnés en Gironde. 
+            Nos tournois sont bien plus qu'une compétition : ils sont un 
+            moment de partage.
+          </p>
+        </div>
+        <div class="mt-auto">
+          <img 
+            src="/src/assets/thumbnails/tournoi/thumb-3-player.png" 
+            alt="Joueuse de padel en action" 
+            class="w-full h-auto object-contain"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Section Pourquoi participer à nos tournois de padel -->
+<section class="flex flex-col lg:flex-row py-16 gap-10 max-w-7xl mx-auto px-8">
+  <div class="flex-1 flex justify-center items-stretch">
+    <div class="w-full lg:w-[420px] h-full shadow-xl rounded-2xl overflow-hidden flex">
+      <img src="/src/assets/tournoi/img-tournoi.png" alt="Tournoi de padel" class="object-cover w-full h-full" />
+    </div>
+  </div>
+  <div class="flex-1 flex flex-col gap-6 max-w-2xl px-4 justify-center">
+    <h2 class="text-3xl md:text-4xl font-impact font-black text-gray-900 mb-2 leading-tight">
+      POURQUOI PARTICIPER À NOS <span class="text-blue-500 text-nowrap">TOURNOIS DE PADEL&nbsp;?</span>
+    </h2>
+    <p class="text-base text-gray-700">
+      Nos tournois de padel sont bien plus que de simples compétitions. Nous vous donnons la chance de partager votre passion avec une communauté dynamique et accueillante. Que vous soyez débutant ou joueur confirmé, ces événements vous permettent d'améliorer votre jeu tout en tissant des liens avec d'autres pratiquants.
+    </p>
+    <p class="text-base text-gray-700">
+      Inscrivez votre équipe ou réservez une place devient rapide et facile. En participant à nos tournois mensuels, vous vous donnez l'opportunité de découvrir des partenaires de jeu et de relever des défis sportifs. Cette activité peut parfaitement s'intégrer à un événement de team building visant à renforcer l'esprit d'équipe de vos collaborateurs.
+    </p>
+  </div>
+</section>
+
+  <!-- Responsive styles -->
+  <style>
+    @media (max-width: 768px) {
+      .flex.gap-6.h-\[500px\] {
+        height: 300px;
+        gap: 0.75rem;
+      }
+      .flex-1.flex.flex-col {
+        gap: 0.75rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .flex.gap-6.h-\[500px\] {
+        height: 250px;
+        gap: 0.5rem;
+      }
+    }
+  </style>

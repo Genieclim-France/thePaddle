@@ -1,4 +1,6 @@
 ---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 export interface Props {
 	title?: string;
 }
@@ -23,7 +25,9 @@ const { title = "The Padel - Votre centre de padel" } = Astro.props;
 		<link href="https://fonts.googleapis.com/css2?family=Impact:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body class="min-h-screen bg-gray-50 font-raleway">
+		<Navbar />
 		<slot />
+		<Footer />
 	</body>
 </html>
 

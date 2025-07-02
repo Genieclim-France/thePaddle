@@ -1,0 +1,86 @@
+---
+// Stats section for The Padel en chiffres
+---
+
+<section class="w-full bg-[#2B2E36] py-16 px-8 flex flex-col items-center lg:py-16 lg:px-8">
+  <!-- Titre principal -->
+  <h2 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-impact font-bold uppercase text-left max-w-4xl lg:max-w-7xl w-full leading-tight mb-12 lg:mb-16">
+    THE PADEL EN CHIFFRES : 
+    <span class="lg:block">
+      <span class="text-[#008AEF]">LES POINTS FORTS</span>
+    </span>
+  </h2>
+  <!-- Stats -->
+  <div class="flex flex-col lg:flex-row gap-16 lg:gap-32 items-center justify-center w-full max-w-2xl">
+    <!-- Stat 1 -->
+    <div class="flex flex-row items-center w-full">
+    <div class="border-l border-white h-32 mx-6 lg:h-44"></div>
+      <div class="flex flex-col">
+        <span class="text-[#008AEF] text-[6rem] leading-none font-impact font-bold counter" data-count="50">0+</span>
+        <p class="text-white text-lg font-raleway font-semibold">Capacité d'accueil<br/>de nos terrains</p>
+      </div>
+    </div>
+    <!-- Stat 2 -->
+    <div class="flex flex-row items-center w-full">
+      <div class="border-l border-white h-32 mx-6 lg:h-44"></div>
+      <div class="flex flex-col">
+        <span class="text-[#12EFED] text-[6rem] leading-none font-impact font-bold counter" data-count="6">0</span>
+        <p class="text-white text-lg font-raleway font-semibold">Terrains pratiquables<br/>en simultané</p>
+      </div>
+    </div>
+    <!-- Stat 3 -->
+    <div class="flex flex-row items-center w-full">
+      <div class="border-l border-white h-32 mx-6 lg:h-44"></div>
+      <div class="flex flex-col">
+        <span class="text-[#12EF97] text-[6rem] leading-none font-impact font-bold counter" data-count="10">0</span>
+        <p class="text-white text-lg font-raleway font-semibold">Événements par an pour<br/>découvrir le Padel</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  // Animation compteur pour les chiffres
+  function animateCounter(el, to, duration = 1200) {
+    let start = 0;
+    let startTime = null;
+    const plus = el.textContent.includes('+');
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const value = Math.floor(progress * (to - start) + start);
+      el.textContent = plus ? value + '+' : value;
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = plus ? to + '+' : to;
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('.bg-\\[\\#2B2E36\\]');
+    const counters = section.querySelectorAll('.counter');
+    let done = false;
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !done) {
+          counters.forEach(el => {
+            const to = parseInt(el.getAttribute('data-count'), 10);
+            animateCounter(el, to);
+          });
+          done = true;
+          observer.disconnect();
+        }
+      }, { threshold: 0.3 });
+      observer.observe(section);
+    } else {
+      // Fallback si IntersectionObserver non supporté
+      counters.forEach(el => {
+        const to = parseInt(el.getAttribute('data-count'), 10);
+        animateCounter(el, to);
+      });
+    }
+  });
+</script> 

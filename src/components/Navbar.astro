@@ -2,39 +2,37 @@
 // Navbar component for The Padel website
 ---
 
-<nav class="bg-[#008AEF] text-white shadow-lg">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<nav class="absolute top-0 left-0 w-full z-50 text-white">
+  <div class="w-full px-4 sm:px-6 lg:px-8 ">
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
-      <div class="flex-shrink-0 flex items-center">
+      <div class="flex items-center">
         <a href="/" class="text-xl font-impact tracking-wider">
-          <img src="/src/assets/logo-title.svg" alt="The Padel" class="w-22 h-22">
+          <img src="/src/assets/logo-title.svg" alt="The Padel" class="w-36 h-36">
         </a>
       </div>
-
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center">
         <div class="w-px h-6 bg-white/40 mx-4 "></div>
-        <div class="flex items-baseline space-x-4">
-          <a href="/" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+        <div class="flex items-baseline font-semibold space-x-4 uppercase">
+          <a href="/" class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors">
             Accueil
           </a>
-          <a href="/courts" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+          <a href="/tournois" class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors">
             Tournois
           </a>
-          <a href="/tarifs" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+          <a href="/tarifs" class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors">
             Boutique
           </a>
-          <a href="/evenements" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
-            L'équipe The Padel
-          </a>
-          <a href="/contact" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+          <a href="/contact" class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors">
             Contact
+          </a>
+          <a href="/reserver" class="bg-blue-green inline-block text-sm px-4 py-2 text-black font-semibold rounded-sm transition-all duration-300 hover:shadow-lg transform hover:scale-105">
+            Réserver un terrain
           </a>
         </div>
       </div>
-
-      <!-- Mobile menu button avec barre verticale -->
+      <!-- Mobile menu button -->
       <div class="flex items-center md:hidden">
         <div class="w-px h-6 bg-white/40 mr-2"></div>
         <button 
@@ -62,7 +60,7 @@
     <div class="menu-backdrop fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-500 ease-in-out opacity-0 pointer-events-none"></div>
     
     <!-- Menu panel with wave effect -->
-    <div class="menu-panel fixed inset-y-0 right-0 w-full bg-gradient-to-br from-[#008AEF] via-[#23E6FE] to-[#12EF97] transform translate-x-full transition-transform duration-700 ease-in-out">
+    <div class="menu-panel fixed top-0 right-0 h-full w-full bg-gradient-to-br from-[#008AEF] via-[#23E6FE] to-[#12EF97] transform translate-x-full transition-transform duration-700 ease-in-out">
       <!-- Wave effect overlay -->
       <div class="wave-overlay absolute inset-0 bg-gradient-to-l from-[#008AEF] to-[#23E6FE] opacity-30"></div>
       
@@ -73,21 +71,22 @@
           <div class="w-12 h-12"></div> <!-- Spacer for button -->
         </div>
         <!-- Navigation links -->
-        <nav class="flex flex-col space-y-8 text-center">
-          <a href="/" class="menu-link block text-2xl font-bold text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
+        <nav class="flex flex-col space-y-8 text-center font-semibold uppercase">
+          <a href="/" class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
             Accueil
           </a>
-          <a href="/courts" class="menu-link block text-2xl font-bold text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
+          <a href="/tournois" class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
             Tournois
           </a>
-          <a href="/tarifs" class="menu-link block text-2xl font-bold text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
+          <a href="/tarifs" class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
             Boutique
           </a>
-          <a href="/evenements" class="menu-link block text-2xl font-bold text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
-            L'équipe The Padel
-          </a>
-          <a href="/contact" class="menu-link block text-2xl font-bold text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
+          <a href="/contact" class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
             Contact
+          </a>
+          <a href="/reserver"
+             class="menu-link block text-2xl bg-blue-green text-black font-semibold rounded-md px-6 py-2 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0 hover:bg-blue-300 hover:text-white shadow-md">
+             Réserver un terrain
           </a>
         </nav>
         
@@ -219,6 +218,20 @@
 
   /* Custom gradient for better visual depth */
   .menu-panel {
+    position: relative;
     background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+  }
+
+  .menu-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/src/assets/bg-terrain.svg');
+    background-size: cover;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    opacity: 0.18; /* Opacité uniquement sur le fond */
+    pointer-events: none;
+    z-index: 0;
   }
 </style> 
