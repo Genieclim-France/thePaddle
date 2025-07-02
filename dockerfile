@@ -5,10 +5,10 @@ COPY . .
 RUN npm install --frozen-lockfile
 RUN npm run build
 
-# Étape 2 : serveur statique
+# Étape 2 : run SSR Node
 FROM node:20-alpine
 WORKDIR /app
 COPY --from=builder /app /app
-RUN npm install -g serve
-EXPOSE 4321
-CMD ["serve", "dist", "-l", "4321"]
+RUN npm install --production --ignore-scripts --prefer-offline
+EXPOSE 3003
+CMD ["node", "./dist/server/entry.mjs"]

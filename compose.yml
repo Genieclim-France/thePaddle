@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  thepadel-site:
+    image: ${{ secrets.DOCKERHUB_USERNAME }}/thepadel-site:latest
+    container_name: thepadel-site
+    ports:
+      - "3003:80"
+    restart: unless-stopped
