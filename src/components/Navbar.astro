@@ -3,31 +3,46 @@
 ---
 
 <nav class="absolute top-0 left-0 w-full z-50 text-white">
-  <div class="w-full px-4 sm:px-6 lg:px-8 ">
+  <div class="w-full px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
       <div class="flex items-center">
         <a href="/" class="text-xl font-impact tracking-wider">
-          <img src="/public/logo-title.svg" alt="The Padel" class="w-36 h-36">
+          <img src="/logo-title.svg" alt="The Padel" class="w-36 h-36" />
         </a>
       </div>
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center">
-        <div class="w-px h-6 bg-white/40 mx-4 "></div>
+        <div class="w-px h-6 bg-white/40 mx-4"></div>
         <div class="flex items-baseline font-semibold space-x-4 uppercase">
-          <a href="/" class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors">
+          <a
+            href="/"
+            class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors"
+          >
             Accueil
           </a>
-          <a href="/tournois" class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors">
+          <a
+            href="/tournois"
+            class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors"
+          >
             Tournois
           </a>
-          <a href="/tarifs" class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors">
+          <a
+            href="/tarifs"
+            class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors"
+          >
             Boutique
           </a>
-          <a href="/contact" class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors">
+          <a
+            href="/contact"
+            class="px-3 py-2 rounded-md text-sm hover:bg-blue-700/20 transition-colors"
+          >
             Contact
           </a>
-          <a href="/reserver" class="bg-blue-green inline-block text-sm px-4 py-2 text-black font-semibold rounded-sm transition-all duration-300 hover:shadow-lg transform hover:scale-105">
+          <a
+            href="/reserver"
+            class="bg-blue-green inline-block text-sm px-4 py-2 text-black font-semibold rounded-sm transition-all duration-300 hover:shadow-lg transform hover:scale-105"
+          >
             Réserver un terrain
           </a>
         </div>
@@ -35,19 +50,39 @@
       <!-- Mobile menu button -->
       <div class="flex items-center md:hidden">
         <div class="w-px h-6 bg-white/40 mr-2"></div>
-        <button 
-          type="button" 
+        <button
+          type="button"
           class="mobile-menu-button relative z-50 inline-flex items-center justify-center p-2 rounded-md hover:bg-blue-700 focus:outline-none transition-all duration-300 ease-in-out"
-          aria-controls="mobile-menu" 
+          aria-controls="mobile-menu"
           aria-expanded="false"
         >
           <span class="sr-only">Ouvrir le menu principal</span>
           <!-- Simple menu/close icons -->
-          <svg class="menu-icon block h-6 w-6 transition-opacity duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <svg
+            class="menu-icon block h-6 w-6 transition-opacity duration-200"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
-          <svg class="close-icon hidden h-6 w-6 transition-opacity duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <svg
+            class="close-icon hidden h-6 w-6 transition-opacity duration-200"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
@@ -57,39 +92,66 @@
   <!-- Mobile menu fullscreen overlay -->
   <div class="mobile-menu fixed inset-0 z-40 md:hidden">
     <!-- Background overlay -->
-    <div class="menu-backdrop fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-500 ease-in-out opacity-0 pointer-events-none"></div>
-    
+    <div
+      class="menu-backdrop fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-500 ease-in-out opacity-0 pointer-events-none"
+    >
+    </div>
+
     <!-- Menu panel with wave effect -->
-    <div class="menu-panel fixed top-0 right-0 h-full w-full bg-gradient-to-br from-[#008AEF] via-[#23E6FE] to-[#12EF97] transform translate-x-full transition-transform duration-700 ease-in-out">
+    <div
+      class="menu-panel fixed top-0 right-0 h-full w-full bg-gradient-to-br from-[#008AEF] via-[#23E6FE] to-[#12EF97] transform translate-x-full transition-transform duration-700 ease-in-out"
+    >
       <!-- Wave effect overlay -->
-      <div class="wave-overlay absolute inset-0 bg-gradient-to-l from-[#008AEF] to-[#23E6FE] opacity-30"></div>
-      
+      <div
+        class="wave-overlay absolute inset-0 bg-gradient-to-l from-[#008AEF] to-[#23E6FE] opacity-30"
+      >
+      </div>
+
       <!-- Menu content -->
-      <div class="relative z-10 h-full flex flex-col justify-center items-center px-8">
+      <div
+        class="relative z-10 h-full flex flex-col justify-center items-center px-8"
+      >
         <!-- Close button area -->
         <div class="absolute top-4 right-4">
-          <div class="w-12 h-12"></div> <!-- Spacer for button -->
+          <div class="w-12 h-12"></div>
+          <!-- Spacer for button -->
         </div>
         <!-- Navigation links -->
-        <nav class="flex flex-col space-y-8 text-center font-semibold uppercase">
-          <a href="/" class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
+        <nav
+          class="flex flex-col space-y-8 text-center font-semibold uppercase"
+        >
+          <a
+            href="/"
+            class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0"
+          >
             Accueil
           </a>
-          <a href="/tournois" class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
+          <a
+            href="/tournois"
+            class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0"
+          >
             Tournois
           </a>
-          <a href="/tarifs" class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
+          <a
+            href="/tarifs"
+            class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0"
+          >
             Boutique
           </a>
-          <a href="/contact" class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0">
+          <a
+            href="/contact"
+            class="menu-link block text-2xl text-white hover:text-blue-200 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0"
+          >
             Contact
           </a>
-          <a href="/reserver"
-             class="menu-link block text-2xl bg-blue-green text-black font-semibold rounded-md px-6 py-2 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0 hover:bg-blue-300 hover:text-white shadow-md">
-             Réserver un terrain
+          <a
+            href="/reserver"
+            class="menu-link block text-2xl bg-blue-green text-black font-semibold rounded-md px-6 py-2 transition-all duration-300 ease-in-out transform translate-y-8 opacity-0 hover:bg-blue-300 hover:text-white shadow-md"
+          >
+            Réserver un terrain
           </a>
         </nav>
-        
+
         <!-- Decorative elements -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <div class="w-12 h-1 bg-white bg-opacity-50 rounded-full"></div>
@@ -97,26 +159,27 @@
       </div>
     </div>
   </div>
+  <div id="padel-transition-cover" aria-hidden="true"></div>
 </nav>
 
 <script>
   // Mobile menu toggle functionality with wave animation
-  document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuButton = document.querySelector('.mobile-menu-button');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const menuBackdrop = document.querySelector('.menu-backdrop');
-    const menuPanel = document.querySelector('.menu-panel');
-    const menuLinks = document.querySelectorAll('.menu-link');
-    const menuIcon = document.querySelector('.menu-icon');
-    const closeIcon = document.querySelector('.close-icon');
-    
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuButton = document.querySelector(".mobile-menu-button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const menuBackdrop = document.querySelector(".menu-backdrop");
+    const menuPanel = document.querySelector(".menu-panel");
+    const menuLinks = document.querySelectorAll(".menu-link");
+    const menuIcon = document.querySelector(".menu-icon");
+    const closeIcon = document.querySelector(".close-icon");
+
     let isMenuOpen = false;
 
     if (mobileMenuButton && mobileMenu) {
       // Initial state: menu fermé
-      mobileMenu.classList.add('pointer-events-none', 'opacity-0');
+      mobileMenu.classList.add("pointer-events-none", "opacity-0");
 
-      mobileMenuButton.addEventListener('click', function() {
+      mobileMenuButton.addEventListener("click", function () {
         if (!isMenuOpen) {
           openMenu();
         } else {
@@ -124,69 +187,75 @@
         }
       });
 
-      menuBackdrop?.addEventListener('click', closeMenu);
+      menuBackdrop?.addEventListener("click", closeMenu);
     }
 
     function openMenu() {
       isMenuOpen = true;
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
 
       // Show mobile menu
-      mobileMenu?.classList.remove('pointer-events-none', 'opacity-0');
+      mobileMenu?.classList.remove("pointer-events-none", "opacity-0");
 
       // Show backdrop
-      menuBackdrop?.classList.remove('opacity-0', 'pointer-events-none');
-      menuBackdrop?.classList.add('opacity-100');
+      menuBackdrop?.classList.remove("opacity-0", "pointer-events-none");
+      menuBackdrop?.classList.add("opacity-100");
 
       // Animate panel sliding from right with wave effect
-      menuPanel?.classList.remove('translate-x-full');
-      menuPanel?.classList.add('translate-x-0');
+      menuPanel?.classList.remove("translate-x-full");
+      menuPanel?.classList.add("translate-x-0");
 
       // Switch icons
-      menuIcon?.classList.add('hidden');
-      closeIcon?.classList.remove('hidden');
+      menuIcon?.classList.add("hidden");
+      closeIcon?.classList.remove("hidden");
 
       // Staggered animation for menu links
       menuLinks.forEach((link, index) => {
-        setTimeout(() => {
-          link.classList.remove('translate-y-8', 'opacity-0');
-          link.classList.add('translate-y-0', 'opacity-100');
-        }, 300 + (index * 100));
+        setTimeout(
+          () => {
+            link.classList.remove("translate-y-8", "opacity-0");
+            link.classList.add("translate-y-0", "opacity-100");
+          },
+          300 + index * 100
+        );
       });
     }
 
     function closeMenu() {
       isMenuOpen = false;
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
 
       // Hide links first
       menuLinks.forEach((link) => {
-        link.classList.remove('translate-y-0', 'opacity-100');
-        link.classList.add('translate-y-8', 'opacity-0');
+        link.classList.remove("translate-y-0", "opacity-100");
+        link.classList.add("translate-y-8", "opacity-0");
       });
 
       // Hide backdrop
-      menuBackdrop?.classList.remove('opacity-100');
-      menuBackdrop?.classList.add('opacity-0', 'pointer-events-none');
+      menuBackdrop?.classList.remove("opacity-100");
+      menuBackdrop?.classList.add("opacity-0", "pointer-events-none");
 
       // Slide panel out
       setTimeout(() => {
-        menuPanel?.classList.remove('translate-x-0');
-        menuPanel?.classList.add('translate-x-full');
+        menuPanel?.classList.remove("translate-x-0");
+        menuPanel?.classList.add("translate-x-full");
         // Hide mobile menu after animation
-        mobileMenu?.classList.add('pointer-events-none', 'opacity-0');
+        mobileMenu?.classList.add("pointer-events-none", "opacity-0");
       }, 200);
 
       // Switch icons back
-      menuIcon?.classList.remove('hidden');
-      closeIcon?.classList.add('hidden');
+      menuIcon?.classList.remove("hidden");
+      closeIcon?.classList.add("hidden");
     }
 
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && isMenuOpen) {
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && isMenuOpen) {
         closeMenu();
       }
     });
+
+    // Navigation normale sans effet de balle
+    // Les liens fonctionnent par défaut
   });
 </script>
 
@@ -207,7 +276,8 @@
   }
 
   /* Simple icon transitions */
-  .menu-icon, .close-icon {
+  .menu-icon,
+  .close-icon {
     transition: opacity 200ms ease-in-out;
   }
 
@@ -226,7 +296,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/public/bg-terrain.svg');
+    background-image: url("/bg-terrain.svg");
     background-size: cover;
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -234,4 +304,5 @@
     pointer-events: none;
     z-index: 0;
   }
-</style> 
+</style>
+

@@ -1,30 +1,53 @@
 ---
-import FooterCarousel from './FooterCarousel.astro';
+import FooterCarousel from "./FooterCarousel.astro";
 // Footer The Padel - version fidèle à la maquette mobile
 ---
 
 <!-- Section Application Mobile -->
 <section class="bg-[#2B2E36] pt-12 pb-24">
-  <div class="max-w-7xl mx-auto px-4 lg:px-4 flex flex-col lg:flex-row items-center justify-center gap-10 min-h-[500px]">
+  <div
+    class="max-w-7xl mx-auto px-4 lg:px-4 flex flex-col lg:flex-row items-center justify-center gap-10 min-h-[500px]"
+  >
     <!-- Colonne gauche : texte -->
     <div class="flex-1 flex flex-col justify-center items-start h-full lg:px-8">
       <div class="w-full">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-impact font-bold uppercase mb-8 text-left">
-          <span class="text-white">NOTRE</span> <span class="text-[#008AEF]">APPLICATION</span>
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl font-impact font-bold uppercase mb-8 text-left"
+        >
+          <span class="text-white">NOTRE</span>
+          <span class="text-[#008AEF]">APPLICATION</span>
         </h2>
         <div class="text-white font-raleway text-lg mb-8 text-left">
-          <p>Réservez un terrain en quelques clics sur notre site web ou notre application mobile.</p>
-          <p class="mt-4">Inscrivez vous à nos compétitions passionnants et montrez tout l'étendu de votre talent.</p>
+          <p>
+            Réservez un terrain en quelques clics sur notre site web ou notre
+            application mobile.
+          </p>
+          <p class="mt-4">
+            Inscrivez vous à nos compétitions passionnants et montrez tout
+            l'étendu de votre talent.
+          </p>
         </div>
-        <a href="#" class="inline-block bg-[#12EF97] hover:bg-[#10d085] text-[#222] font-impact text-lg uppercase rounded-md px-8 py-4 font-bold mb-0 transition-colors duration-200 shadow-md" style="letter-spacing:0.5px;">
-          TÉLÉCHARGER L'APPLICATION
+        <a
+          href="#"
+          aria-label="Télécharger l'application"
+          class="inline-block bg-[#12EF97] hover:bg-[#10d085] text-[#222] font-impact text-lg uppercase rounded-md px-8 py-4 font-bold mb-0 transition-colors duration-200 shadow-md cta-padel-btn"
+          style="letter-spacing:0.5px; position:relative; overflow:hidden;"
+        >
+          <span class="relative z-10">TÉLÉCHARGER L'APPLICATION</span>
+          <span class="cta-padel-ball" aria-hidden="true"></span>
         </a>
       </div>
     </div>
     <!-- Colonne droite : mockup -->
     <div class="flex-1 flex items-center justify-center h-full lg:px-8">
-      <div class="rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-[#00C6FB] to-[#005BEA] p-0 w-full flex items-center justify-center">
-        <img src="/public/application.png" alt="Mockup application mobile The Padel" class="w-full h-auto object-contain" />
+      <div
+        class="rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-[#00C6FB] to-[#005BEA] p-0 w-full flex items-center justify-center"
+      >
+        <img
+          src="/application.png"
+          alt="Mockup application mobile The Padel"
+          class="w-full h-auto object-contain"
+        />
       </div>
     </div>
   </div>
@@ -34,61 +57,112 @@ import FooterCarousel from './FooterCarousel.astro';
 <FooterCarousel />
 
 <!-- Bloc principal Footer Desktop fidèle à la maquette -->
-<div class="w-full lg:pl-20 2xl:px-40 bg-[#2B2E36] flex flex-col-reverse lg:flex-row  items-stretch justify-between lg:min-h-[480px] lg:py-0 py-8">
+<div
+  class="w-full lg:pl-20 2xl:px-40 bg-[#2B2E36] flex flex-col-reverse lg:flex-row items-stretch justify-between lg:min-h-[480px] lg:py-0 py-8"
+>
   <!-- Footer principal (logo + infos + barre + nav) -->
   <div class="max-w-7xl mx-auto w-full flex flex-col lg:flex-row">
     <!-- Colonne gauche : Logo + Infos club -->
-    <div class="flex flex-col justify-center items-center lg:items-start px-4 lg:px-8 py-8 lg:py-0 min-w-[320px] max-w-[500px] ">
-      <img src="/public/logo-color.svg" alt="The Padel" class="w-40 mb-4" />
+    <div
+      class="flex flex-col justify-center items-center lg:items-start px-4 lg:px-8 py-8 lg:py-0 min-w-[320px] max-w-[500px]"
+    >
+      <img src="/logo-color.svg" alt="The Padel" class="w-40 mb-4" />
       <div class="text-white font-raleway text-base">
         <div class="flex items-start gap-2 mb-1">
-          <svg class="w-5 h-5 text-[#12EFED] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
+          <svg
+            class="w-5 h-5 text-[#12EFED] mt-1 flex-shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            ><path
+              fill-rule="evenodd"
+              d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path></svg
+          >
           <div class="flex flex-col gap-2">
-            <span><span class="font-bold">Siège social :</span> 20 Avenue Jean Mermoz, <span class="text-nowrap">33185 LE HAILLAN</span></span>
-            <span><span class="font-bold">Club :</span> 212 Av du Maréchal Leclerc, <span class="text-nowrap">33130 Bègles</span></span>
+            <span
+              ><span class="font-bold">Siège social :</span> 20 Avenue Jean Mermoz,
+              <span class="text-nowrap">33185 LE HAILLAN</span></span
+            >
+            <span
+              ><span class="font-bold">Club :</span> 212 Av du Maréchal Leclerc,
+              <span class="text-nowrap">33130 Bègles</span></span
+            >
           </div>
         </div>
         <div class="flex items-center gap-2 mb-3">
-          <svg class="w-5 h-5 text-[#12EFED] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
+          <svg
+            class="w-5 h-5 text-[#12EFED] flex-shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            ><path
+              d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+            ></path></svg
+          >
           06 67 45 40 70
         </div>
         <div class="mb-1 mt-2 pl-7">
-          Lun - Ven : <span class="text-[#12EFED] font-semibold">6h30 - 23h30</span>
-        </div> 
+          Lun - Ven : <span class="text-[#12EFED] font-semibold"
+            >6h30 - 23h30</span
+          >
+        </div>
         <div class="mt-1 pl-7">
-          Sam - Dim : <span class="text-[#12EFED] font-semibold">6h30 - 23h30</span>
+          Sam - Dim : <span class="text-[#12EFED] font-semibold"
+            >6h30 - 23h30</span
+          >
         </div>
       </div>
     </div>
     <!-- Navigation + Barre côte à côte sur toutes tailles (barre à gauche) -->
-    <div class="flex flex-row lg:items-center px-4 lg:px-8 py-8 lg:py-0 min-w-[180px] max-w-[500px]">
+    <div
+      class="flex flex-row lg:items-center px-4 lg:px-8 py-8 lg:py-0 min-w-[180px] max-w-[500px]"
+    >
       <!-- Barre verticale gradient toujours à gauche du menu -->
       <div class="flex items-center">
-        <div class="w-[1px] h-50 lg:h-96 rounded-full mr-6" style="background: linear-gradient(180deg, #008AEF 0%, #12EF97 100%);"></div>
+        <div
+          class="w-[1px] h-50 lg:h-96 rounded-full mr-6"
+          style="background: linear-gradient(180deg, #008AEF 0%, #12EF97 100%);"
+        >
+        </div>
       </div>
       <nav class="flex flex-col gap-3 text-lg font-impact uppercase text-white">
         <a href="/" class="hover:text-[#12EF97] transition">Accueil</a>
         <a href="/tournois" class="hover:text-[#12EF97] transition">Tournois</a>
         <a href="/boutique" class="hover:text-[#12EF97] transition">Boutique</a>
         <a href="/contact" class="hover:text-[#12EF97] transition">Contact</a>
+        <a href="/reglement" class="hover:text-[#12EF97] transition"
+          >Règlement intérieur</a
+        >
       </nav>
     </div>
   </div>
   <!-- Section Réserver un terrain à droite, centrée verticalement -->
-  <section class="w-full lg:w-3/5 flex flex-col justify-center items-start px-4 lg:pl-0 lg:pr-20 2xl:pr-0 2xl:pl-20 py-8 lg:py-0">
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-impact uppercase text-white mb-4 text-left leading-tight">
+  <section
+    class="w-full lg:w-3/5 flex flex-col justify-center items-start px-4 lg:pl-0 lg:pr-20 2xl:pr-0 2xl:pl-20 py-8 lg:py-0"
+  >
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl font-impact uppercase text-white mb-4 text-left leading-tight"
+    >
       VIVEZ LA PASSION DU PADEL AVEC NOUS EN GIRONDE
     </h2>
     <p class="text-white font-raleway mb-6 text-left max-w-2xl">
-      Profitez d'infrastructures modernes et d'une ambiance conviviale dans notre centre près de Bordeaux.
+      Profitez d'infrastructures modernes et d'une ambiance conviviale dans
+      notre centre près de Bordeaux.
     </p>
-    <a href="#" class="inline-block bg-[#12EF97] hover:bg-[#10d085] text-[#222] font-impact text-lg uppercase rounded-md px-8 py-3 font-bold transition-colors duration-200 shadow-md" style="letter-spacing:0.5px;">
-      RÉSERVER UN TERRAIN
+    <a
+      href="#"
+      aria-label="Réserver un terrain"
+      class="inline-block bg-[#12EF97] hover:bg-[#10d085] text-[#222] font-impact text-lg uppercase rounded-md px-8 py-3 font-bold transition-colors duration-200 shadow-md cta-padel-btn"
+      style="letter-spacing:0.5px; position:relative; overflow:hidden;"
+    >
+      <span class="relative z-10">RÉSERVER UN TERRAIN</span>
+      <span class="cta-padel-ball" aria-hidden="true"></span>
     </a>
   </section>
 </div>
 <!-- Copyright -->
-<div class="w-full text-blue-100 font-raleway text-xs text-center opacity-80 py-2 bg-[#2B2E36]">
+<div
+  class="w-full text-blue-100 font-raleway text-xs text-center opacity-80 py-2 bg-[#2B2E36]"
+>
   © <span id="footer-year"></span> The Padel. Tous droits réservés.
 </div>
 
@@ -96,9 +170,9 @@ import FooterCarousel from './FooterCarousel.astro';
   // Carousel multi-slides circulaire simple
   const slidesCount = 4;
   let current = 0;
-  const track = document.getElementById('footer-carousel-track');
-  const prevBtn = document.getElementById('footer-carousel-prev');
-  const nextBtn = document.getElementById('footer-carousel-next');
+  const track = document.getElementById("footer-carousel-track");
+  const prevBtn = document.getElementById("footer-carousel-prev");
+  const nextBtn = document.getElementById("footer-carousel-next");
   let startX = 0;
   let isDragging = false;
 
@@ -122,35 +196,35 @@ import FooterCarousel from './FooterCarousel.astro';
     if (current > maxIndex) current = 0;
     const slideWidth = getSlideWidth();
     const offset = current * slideWidth;
-    track.style.transition = 'transform 0.5s';
+    track.style.transition = "transform 0.5s";
     track.style.transform = `translateX(-${offset}px)`;
   }
 
   if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
+    prevBtn.addEventListener("click", () => {
       current--;
       updateCarousel();
     });
   }
   if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
+    nextBtn.addEventListener("click", () => {
       current++;
       updateCarousel();
     });
   }
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     updateCarousel();
   });
 
   if (track) {
-    track.addEventListener('touchstart', (e) => {
+    track.addEventListener("touchstart", (e) => {
       if (e.touches.length === 1) {
         startX = e.touches[0].clientX;
         isDragging = true;
       }
     });
 
-    track.addEventListener('touchend', (e) => {
+    track.addEventListener("touchend", (e) => {
       if (!isDragging) return;
       isDragging = false;
       const endX = e.changedTouches[0].clientX;
@@ -168,11 +242,12 @@ import FooterCarousel from './FooterCarousel.astro';
   // Init
   updateCarousel();
 
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener("DOMContentLoaded", function () {
     const year = new Date().getFullYear().toString();
-    const yearElement = document.getElementById('footer-year');
+    const yearElement = document.getElementById("footer-year");
     if (yearElement) {
       yearElement.textContent = year;
     }
   });
-</script> 
+</script>
+

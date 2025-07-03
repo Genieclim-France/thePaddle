@@ -13,7 +13,7 @@ export const POST: APIRoute = async ({ request }) => {
     },
     body: JSON.stringify({
       sender: { email: body.email, name: body.name },
-      to: [{ email: 'a.janiak@genieclimfrance.fr', name: 'The Padel' }],
+      to: [{ email: `${import.meta.env.BREVO_EMAIL}`, name: 'The Padel' }],
       subject: `Contact The Padel : ${body.demand}`,
       htmlContent: `
         <div style="background:#f6f8fa;padding:40px 0;">
@@ -27,7 +27,7 @@ export const POST: APIRoute = async ({ request }) => {
               <tr><td style="font-weight:600;padding:8px 0;vertical-align:top;">Précisions :</td><td>${body.details.replace(/\n/g, '<br>')}</td></tr>
             </table>
             <div style="text-align:center;margin-top:32px;">
-              <img src="https://thepadel.fr/public/logo-color.svg" alt="The Padel" style="height:48px;margin-bottom:8px;"/>
+              <img src="https://thepadel.fr/logo-color.svg" alt="The Padel" style="height:48px;margin-bottom:8px;"/>
               <div style="color:#008AEF;font-weight:700;font-size:18px;">The Padel</div>
               <div style="color:#888;font-size:14px;">Contact reçu depuis le site web</div>
             </div>

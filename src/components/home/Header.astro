@@ -5,9 +5,9 @@
 <header class="relative h-[calc(100vh-4rem)] min-h-[600px] overflow-hidden">
   <!-- Background image -->
   <div class="absolute inset-0 z-0">
-    <img 
-      src="/public/header-bg.png"
-      alt="Terrain de padel" 
+    <img
+      src="/header-bg.png"
+      alt="Terrain de padel"
       class="w-full h-full object-cover"
     />
   </div>
@@ -15,30 +15,121 @@
   <!-- Content overlay -->
   <div class="absolute inset-0 z-10 flex items-center justify-center">
     <div class="text-center text-white px-4 sm:px-6 lg:px-8">
-    <!-- Logo placeholder -->
-    <div>
-      <div class="w-60 h-60 sm:w-80 sm:h-80 mx-auto flex items-center justify-center">
-        <img src="/public/logo-full.svg" alt="The Padel" class="w-full h-full">
+      <!-- Logo placeholder -->
+      <div>
+        <div
+          class="w-60 h-60 sm:w-80 sm:h-80 mx-auto flex items-center justify-center"
+        >
+          <img src="/logo-full.svg" alt="The Padel" class="w-full h-full" />
+        </div>
       </div>
-    </div>
-    
-    <!-- Tagline -->
-    <h1 class="text-lg sm:text-xl lg:text-2xl font-raleway font-bold mb-8 text-white uppercase tracking-wider text-shadow-lg">
-      Notre passion, votre terrain
-    </h1>
 
-         <!-- CTA Button -->
-     <a 
-       href="/reserver" 
-       class="bg-blue-green inline-block px-8 py-4 text-black font-raleway font-bold uppercase tracking-wide rounded-lg transition-all duration-300 hover:shadow-lg transform hover:scale-105"
-     >
-       Réserver un terrain
-     </a>
-     </div>
+      <!-- Tagline -->
+      <h1
+        class="text-lg sm:text-xl lg:text-2xl font-raleway font-bold mb-8 text-white uppercase tracking-wider text-shadow-lg"
+      >
+        Notre passion, votre terrain
+      </h1>
+
+      <!-- CTA Button -->
+      <a
+        href="/reserver"
+        class="bg-blue-green inline-block px-8 py-4 text-black font-raleway font-bold uppercase tracking-wide rounded-lg transition-all duration-300 hover:shadow-lg transform hover:scale-105 cta-padel-btn"
+      >
+        <span class="relative z-10">Réserver un terrain</span>
+        <span class="cta-padel-ball" aria-hidden="true"></span>
+      </a>
     </div>
-</header> 
+  </div>
+</header>
 <div class="bg-dark-blue">
- <h2 class="text-white uppercase text-center py-5 text-2xl font-impact">
-     Jouer au <span class="gradient-blue-green">padel</span> en gironde
- </h2>
+  <h2 class="text-white uppercase text-center py-5 text-2xl font-impact">
+    Jouer au <span class="gradient-blue-green">padel</span> en gironde
+  </h2>
 </div>
+
+<style>
+  .cta-padel-btn {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-padel-ball {
+    position: absolute;
+    left: -40px;
+    top: 90%;
+    width: 28px;
+    height: 28px;
+    background: radial-gradient(circle at 70% 30%, #ffe066 80%, #ffd700 100%);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px #ffd70080;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: none;
+  }
+
+  .cta-padel-btn:hover .cta-padel-ball,
+  .cta-padel-btn:focus .cta-padel-ball {
+    animation: padel-ball-move 0.8s cubic-bezier(0.7, -0.2, 0.7, 1.2) both;
+    opacity: 1;
+  }
+
+  @keyframes padel-ball-move {
+    0% {
+      left: -40px;
+      top: 90%;
+      opacity: 1;
+      transform: translateY(-50%) scale(1) rotate(0deg);
+    }
+    90% {
+      left: calc(100% + 40px);
+      top: 10%;
+      opacity: 1;
+      transform: translateY(-50%) scale(1.05) rotate(15deg);
+    }
+    100% {
+      left: calc(100% + 40px);
+      top: 10%;
+      opacity: 0;
+      transform: translateY(-50%) scale(0.9) rotate(25deg);
+    }
+  }
+
+  /* Traits blancs de la balle */
+  .cta-padel-ball::before,
+  .cta-padel-ball::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: none;
+    pointer-events: none;
+  }
+
+  .cta-padel-ball::before {
+    left: 7px;
+    top: 2px;
+    width: 14px;
+    height: 24px;
+    border-left: 2.5px solid #fff;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    transform: rotate(-20deg);
+    opacity: 0.7;
+  }
+
+  .cta-padel-ball::after {
+    left: 7px;
+    top: 2px;
+    width: 14px;
+    height: 24px;
+    border-right: 2.5px solid #fff;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    transform: rotate(20deg);
+    opacity: 0.7;
+  }
+</style>

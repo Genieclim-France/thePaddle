@@ -3,87 +3,199 @@
 ---
 
 <!-- Préchargement des images -->
-<link rel="preload" as="image" href="/public/thumbnails/slider-footer/thumb1-sponsor.png">
-<link rel="preload" as="image" href="/public/thumbnails/slider-footer/thumb2-tournoi.png">
-<link rel="preload" as="image" href="/public/thumbnails/slider-footer/thumb2-shop.png">
-<link rel="preload" as="image" href="/public/thumbnails/slider-footer/thumb2-team.png">
+<link
+  rel="preload"
+  as="image"
+  href="/thumbnails/slider-footer/thumb1-sponsor.png"
+/>
+<link
+  rel="preload"
+  as="image"
+  href="/thumbnails/slider-footer/thumb2-tournoi.png"
+/>
+<link
+  rel="preload"
+  as="image"
+  href="/thumbnails/slider-footer/thumb2-shop.png"
+/>
+<link
+  rel="preload"
+  as="image"
+  href="/thumbnails/slider-footer/thumb2-team.png"
+/>
 
 <!-- Carrousel Footer -->
-<section class="w-full bg-[#2B2E36] flex flex-col items-center lg:items-end lg:px-0 pb-12 px-4">
-    <div class="w-full max-w-[1114px] relative">
-      <!-- Carousel multi-slides circulaire simple -->
-      <div class="overflow-hidden cursor-grab">
-        <div id="footer-carousel-track" class="flex transition-transform duration-500 will-change-transform select-none" style="transform: translateX(0);">
-          <!-- Slide 1 -->
-          <div class="flex-shrink-0 w-full lg:w-[350px] mx-0 lg:mx-4 rounded-2xl overflow-hidden shadow-lg relative bg-black group">
-            <img src="/public/thumbnails/slider-footer/thumb1-sponsor.png" alt="Le Club" class="w-full h-[220px] object-cover" draggable="false" />
-            <div class="tennis-ball-effect"></div>
-            <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(180deg,rgba(0,0,0,0) 10%,rgba(0,138,239,0.85) 100%);"></div>
-            <div class="absolute bottom-0 left-0 w-full h-1/3 flex items-end">
-              <div class="pl-8 pb-8">
-                <span class="text-3xl sm:text-4xl font-impact font-bold uppercase text-white px-4 py-2 rounded-lg" style="position:relative;z-index:3;">Le Club</span>
-              </div>
+<section
+  class="w-full bg-[#2B2E36] flex flex-col items-center lg:items-end lg:px-0 pb-12 px-4"
+>
+  <div class="w-full max-w-[1114px] relative">
+    <!-- Carousel multi-slides circulaire simple -->
+    <div class="overflow-hidden cursor-grab">
+      <div
+        id="footer-carousel-track"
+        class="flex transition-transform duration-500 will-change-transform select-none"
+        style="transform: translateX(0);"
+      >
+        <!-- Slide 2 -->
+        <a
+          href="/tournois"
+          aria-label="Aller à la page tournois"
+          class="flex-shrink-0 w-full lg:w-[350px] mx-0 lg:mx-4 rounded-2xl overflow-hidden shadow-lg relative bg-black group block focus:outline-none focus:ring-2 focus:ring-[#12EF97]"
+        >
+          <img
+            src="/thumbnails/slider-footer/thumb2-tournoi.png"
+            alt="Tournois"
+            class="w-full h-[220px] object-cover"
+            draggable="false"
+          />
+          <div class="tennis-ball-effect"></div>
+          <div
+            class="absolute inset-0 pointer-events-none"
+            style="background: linear-gradient(180deg,rgba(0,0,0,0) 10%,rgba(0,138,239,0.85) 100%);"
+          >
+          </div>
+          <div class="absolute bottom-0 left-0 w-full h-1/3 flex items-end">
+            <div class="pl-8 pb-8">
+              <span
+                class="text-3xl sm:text-4xl font-impact font-bold uppercase text-white px-4 py-2 rounded-lg"
+                style="position:relative;z-index:3;">Tournois</span
+              >
             </div>
           </div>
-          <!-- Slide 2 -->
-          <div class="flex-shrink-0 w-full lg:w-[350px] mx-0 lg:mx-4 rounded-2xl overflow-hidden shadow-lg relative bg-black group">
-            <img src="/public/thumbnails/slider-footer/thumb2-tournoi.png" alt="Tournois" class="w-full h-[220px] object-cover" draggable="false" />
-            <div class="tennis-ball-effect"></div>
-            <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(180deg,rgba(0,0,0,0) 10%,rgba(0,138,239,0.85) 100%);"></div>
-            <div class="absolute bottom-0 left-0 w-full h-1/3 flex items-end">
-              <div class="pl-8 pb-8">
-                <span class="text-3xl sm:text-4xl font-impact font-bold uppercase text-white px-4 py-2 rounded-lg" style="position:relative;z-index:3;">Tournois</span>
-              </div>
+        </a>
+        <!-- Slide 3 -->
+        <a
+          href="/boutique"
+          aria-label="Aller à la page boutique"
+          class="flex-shrink-0 w-full lg:w-[350px] mx-0 lg:mx-4 rounded-2xl overflow-hidden shadow-lg relative bg-black group block focus:outline-none focus:ring-2 focus:ring-[#12EF97]"
+        >
+          <img
+            src="/thumbnails/slider-footer/thumb2-shop.png"
+            alt="Boutique"
+            class="w-full h-[220px] object-cover"
+            draggable="false"
+          />
+          <div class="tennis-ball-effect"></div>
+          <div
+            class="absolute inset-0 pointer-events-none"
+            style="background: linear-gradient(180deg,rgba(0,0,0,0) 10%,rgba(0,138,239,0.85) 100%);"
+          >
+          </div>
+          <div class="absolute bottom-0 left-0 w-full h-1/3 flex items-end">
+            <div class="pl-8 pb-8">
+              <span
+                class="text-3xl sm:text-4xl font-impact font-bold uppercase text-white px-4 py-2 rounded-lg"
+                style="position:relative;z-index:3;">Boutique</span
+              >
             </div>
           </div>
-          <!-- Slide 3 -->
-          <div class="flex-shrink-0 w-full lg:w-[350px] mx-0 lg:mx-4 rounded-2xl overflow-hidden shadow-lg relative bg-black group">
-            <img src="/public/thumbnails/slider-footer/thumb2-shop.png" alt="Boutique" class="w-full h-[220px] object-cover" draggable="false" />
-            <div class="tennis-ball-effect"></div>
-            <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(180deg,rgba(0,0,0,0) 10%,rgba(0,138,239,0.85) 100%);"></div>
-            <div class="absolute bottom-0 left-0 w-full h-1/3 flex items-end">
-              <div class="pl-8 pb-8">
-                <span class="text-3xl sm:text-4xl font-impact font-bold uppercase text-white px-4 py-2 rounded-lg" style="position:relative;z-index:3;">Boutique</span>
-              </div>
+        </a>
+        <!-- Slide 4 -->
+        <a
+          href="/contact"
+          aria-label="Aller à la page contact"
+          class="flex-shrink-0 w-full lg:w-[350px] mx-0 lg:mx-4 rounded-2xl overflow-hidden shadow-lg relative bg-black group block focus:outline-none focus:ring-2 focus:ring-[#12EF97]"
+        >
+          <img
+            src="/thumbnails/slider-footer/thumb2-team.png"
+            alt="Contact"
+            class="w-full h-[220px] object-cover"
+            draggable="false"
+          />
+          <div class="tennis-ball-effect"></div>
+          <div
+            class="absolute inset-0 pointer-events-none"
+            style="background: linear-gradient(180deg,rgba(0,0,0,0) 10%,rgba(0,138,239,0.85) 100%);"
+          >
+          </div>
+          <div class="absolute bottom-0 left-0 w-full h-1/3 flex items-end">
+            <div class="pl-8 pb-8">
+              <span
+                class="text-white text-3xl sm:text-4xl font-impact font-bold uppercase px-4 py-2 rounded-lg"
+                style="position:relative;z-index:3;">Contact</span
+              >
             </div>
           </div>
-          <!-- Slide 4 -->
-          <div class="flex-shrink-0 w-full lg:w-[350px] mx-0 lg:mx-4 rounded-2xl overflow-hidden shadow-lg relative bg-black group">
-            <img src="/public/thumbnails/slider-footer/thumb2-team.png" alt="Team" class="w-full h-[220px] object-cover" draggable="false" />
-            <div class="tennis-ball-effect"></div>
-            <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(180deg,rgba(0,0,0,0) 10%,rgba(0,138,239,0.85) 100%);"></div>
-            <div class="absolute bottom-0 left-0 w-full h-1/3 flex items-end">
-              <div class="pl-8 pb-8">
-                <span class="text-white text-3xl sm:text-4xl font-impact font-bold uppercase px-4 py-2 rounded-lg" style="position:relative;z-index:3;">Contact</span>
-              </div>
+        </a>
+        <!-- Slide 1 -->
+        <a
+          href="/reglement"
+          aria-label="Aller à la page du règlement intérieur"
+          class="flex-shrink-0 w-full lg:w-[350px] mx-0 lg:mx-4 rounded-2xl overflow-hidden shadow-lg relative bg-black group block focus:outline-none focus:ring-2 focus:ring-[#12EF97]"
+        >
+          <img
+            src="/thumbnails/slider-footer/thumb1-sponsor.png"
+            alt="Le Club"
+            class="w-full h-[220px] object-cover"
+            draggable="false"
+          />
+          <div class="tennis-ball-effect"></div>
+          <div
+            class="absolute inset-0 pointer-events-none"
+            style="background: linear-gradient(180deg,rgba(0,0,0,0) 10%,rgba(0,138,239,0.85) 100%);"
+          >
+          </div>
+          <div class="absolute bottom-0 left-0 w-full h-1/3 flex items-end">
+            <div class="pl-8 pb-8">
+              <span
+                class="text-3xl sm:text-4xl font-impact font-bold uppercase text-white px-4 py-2 rounded-lg"
+                style="position:relative;z-index:3;">Règlement</span
+              >
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Flèches -->
-      <div class="absolute -bottom-5 right-5 flex gap-3 z-20">
-        <button id="footer-carousel-prev" class="w-10 h-10 bg-[#12EF97] hover:bg-[#10d085] rounded-xl flex items-center justify-center text-[#2B2E36] text-2xl font-bold shadow-md transition" aria-label="Précédent">
-          <svg width="24" height="24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        <button id="footer-carousel-next" class="w-10 h-10 bg-[#12EF97] hover:bg-[#10d085] rounded-xl flex items-center justify-center text-[#2B2E36] text-2xl font-bold shadow-md transition" aria-label="Suivant">
-          <svg width="24" height="24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+        </a>
       </div>
     </div>
-  </section>
-  
+    <!-- Flèches -->
+    <div class="absolute -bottom-5 right-5 flex gap-3 z-20">
+      <button
+        id="footer-carousel-prev"
+        class="w-10 h-10 bg-[#12EF97] hover:bg-[#10d085] rounded-xl flex items-center justify-center text-[#2B2E36] text-2xl font-bold shadow-md transition"
+        aria-label="Précédent"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="none"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+      <button
+        id="footer-carousel-next"
+        class="w-10 h-10 bg-[#12EF97] hover:bg-[#10d085] rounded-xl flex items-center justify-center text-[#2B2E36] text-2xl font-bold shadow-md transition"
+        aria-label="Suivant"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="none"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const track = document.getElementById('footer-carousel-track');
-    const prevBtn = document.getElementById('footer-carousel-prev');
-    const nextBtn = document.getElementById('footer-carousel-next');
-    
+  document.addEventListener("DOMContentLoaded", function () {
+    const track = document.getElementById("footer-carousel-track");
+    const prevBtn = document.getElementById("footer-carousel-prev");
+    const nextBtn = document.getElementById("footer-carousel-next");
+
     if (!track || !prevBtn || !nextBtn) return;
-    
+
     let currentIndex = 0; // Index du premier slide visible
     const totalSlides = 4; // Nombre total de slides
     const visibleSlides = 3; // Toujours 3 sur desktop
@@ -93,29 +205,29 @@
     // Fonction pour précharger toutes les images
     function preloadImages() {
       if (!track) return;
-      const images = track.querySelectorAll('img');
+      const images = track.querySelectorAll("img");
       let loadedCount = 0;
       const totalImages = images.length;
-      
+
       if (totalImages === 0) {
         imagesLoaded = true;
         initializeCarousel();
         return;
       }
-      
-      images.forEach(img => {
+
+      images.forEach((img) => {
         if (img.complete) {
           loadedCount++;
         } else {
-          img.addEventListener('load', () => {
+          img.addEventListener("load", () => {
             loadedCount++;
             if (loadedCount === totalImages) {
               imagesLoaded = true;
               initializeCarousel();
             }
           });
-          
-          img.addEventListener('error', () => {
+
+          img.addEventListener("error", () => {
             loadedCount++;
             if (loadedCount === totalImages) {
               imagesLoaded = true;
@@ -124,7 +236,7 @@
           });
         }
       });
-      
+
       if (loadedCount === totalImages) {
         imagesLoaded = true;
         initializeCarousel();
@@ -157,7 +269,9 @@
         currentIndex++;
         updateCarouselPosition();
       }
-      setTimeout(() => { isTransitioning = false; }, 600);
+      setTimeout(() => {
+        isTransitioning = false;
+      }, 600);
     }
 
     function prevSlide() {
@@ -167,7 +281,9 @@
         currentIndex--;
         updateCarouselPosition();
       }
-      setTimeout(() => { isTransitioning = false; }, 600);
+      setTimeout(() => {
+        isTransitioning = false;
+      }, 600);
     }
 
     // Initialiser le carousel une fois les images chargées
@@ -177,12 +293,12 @@
 
       // Scroll continu au maintien sur la flèche
       let holdInterval: ReturnType<typeof setInterval> | null = null;
-      function startHold(direction: 'next' | 'prev') {
+      function startHold(direction: "next" | "prev") {
         if (holdInterval) clearInterval(holdInterval);
-        if (direction === 'next') nextSlide();
+        if (direction === "next") nextSlide();
         else prevSlide();
         holdInterval = setInterval(() => {
-          if (direction === 'next') nextSlide();
+          if (direction === "next") nextSlide();
           else prevSlide();
         }, 350);
       }
@@ -192,23 +308,23 @@
           holdInterval = null;
         }
       }
-      nextBtn.addEventListener('mousedown', () => startHold('next'));
-      nextBtn.addEventListener('touchstart', () => startHold('next'));
-      nextBtn.addEventListener('mouseup', stopHold);
-      nextBtn.addEventListener('mouseleave', stopHold);
-      nextBtn.addEventListener('touchend', stopHold);
-      nextBtn.addEventListener('touchcancel', stopHold);
-      prevBtn.addEventListener('mousedown', () => startHold('prev'));
-      prevBtn.addEventListener('touchstart', () => startHold('prev'));
-      prevBtn.addEventListener('mouseup', stopHold);
-      prevBtn.addEventListener('mouseleave', stopHold);
-      prevBtn.addEventListener('touchend', stopHold);
-      prevBtn.addEventListener('touchcancel', stopHold);
+      nextBtn.addEventListener("mousedown", () => startHold("next"));
+      nextBtn.addEventListener("touchstart", () => startHold("next"));
+      nextBtn.addEventListener("mouseup", stopHold);
+      nextBtn.addEventListener("mouseleave", stopHold);
+      nextBtn.addEventListener("touchend", stopHold);
+      nextBtn.addEventListener("touchcancel", stopHold);
+      prevBtn.addEventListener("mousedown", () => startHold("prev"));
+      prevBtn.addEventListener("touchstart", () => startHold("prev"));
+      prevBtn.addEventListener("mouseup", stopHold);
+      prevBtn.addEventListener("mouseleave", stopHold);
+      prevBtn.addEventListener("touchend", stopHold);
+      prevBtn.addEventListener("touchcancel", stopHold);
 
       // Clic simple
-      nextBtn.addEventListener('click', nextSlide);
-      prevBtn.addEventListener('click', prevSlide);
-      window.addEventListener('resize', () => {
+      nextBtn.addEventListener("click", nextSlide);
+      prevBtn.addEventListener("click", prevSlide);
+      window.addEventListener("resize", () => {
         updateCarouselPosition();
       });
 
@@ -225,25 +341,27 @@
 
       function setTrackTransition(enable: boolean) {
         if (!track) return;
-        track.style.transition = enable ? 'transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)' : 'none';
+        track.style.transition = enable
+          ? "transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+          : "none";
       }
 
       function onDragStart(e: MouseEvent | TouchEvent) {
         if (!track) return;
         isDragging = true;
         setTrackTransition(false);
-        startX = (e instanceof TouchEvent ? e.touches[0].clientX : e.clientX);
+        startX = e instanceof TouchEvent ? e.touches[0].clientX : e.clientX;
         prevTranslate = -currentIndex * getSlideWidthForDrag();
         dragStartIndex = currentIndex;
-        document.addEventListener('mousemove', onDragMove);
-        document.addEventListener('touchmove', onDragMove);
-        document.addEventListener('mouseup', onDragEnd);
-        document.addEventListener('touchend', onDragEnd);
+        document.addEventListener("mousemove", onDragMove);
+        document.addEventListener("touchmove", onDragMove);
+        document.addEventListener("mouseup", onDragEnd);
+        document.addEventListener("touchend", onDragEnd);
       }
 
       function onDragMove(e: MouseEvent | TouchEvent) {
         if (!isDragging || !track) return;
-        const x = (e instanceof TouchEvent ? e.touches[0].clientX : e.clientX);
+        const x = e instanceof TouchEvent ? e.touches[0].clientX : e.clientX;
         const delta = x - startX;
         currentTranslate = prevTranslate + delta;
         track.style.transform = `translateX(${currentTranslate}px)`;
@@ -259,14 +377,14 @@
         newIndex = Math.max(0, Math.min(newIndex, totalSlides - visibleSlides));
         currentIndex = newIndex;
         updateCarouselPosition();
-        document.removeEventListener('mousemove', onDragMove);
-        document.removeEventListener('touchmove', onDragMove);
-        document.removeEventListener('mouseup', onDragEnd);
-        document.removeEventListener('touchend', onDragEnd);
+        document.removeEventListener("mousemove", onDragMove);
+        document.removeEventListener("touchmove", onDragMove);
+        document.removeEventListener("mouseup", onDragEnd);
+        document.removeEventListener("touchend", onDragEnd);
       }
 
-      track.addEventListener('mousedown', onDragStart);
-      track.addEventListener('touchstart', onDragStart);
+      track.addEventListener("mousedown", onDragStart);
+      track.addEventListener("touchstart", onDragStart);
     }
 
     // Démarrer le préchargement
@@ -282,14 +400,14 @@
     transform-style: preserve-3d;
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
-  
+
   /* Optimisation des slides */
   #footer-carousel-track > div {
     will-change: auto;
     backface-visibility: hidden;
     transform: translateZ(0);
   }
-  
+
   /* Optimisation des images */
   #footer-carousel-track img {
     will-change: auto;
@@ -297,35 +415,37 @@
     transform: translateZ(0);
     image-rendering: optimizeQuality;
   }
-  
+
   /* Masquer la scrollbar */
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
-  
+
   /* Container principal optimisé */
   .carousel-container {
     overflow: hidden;
     transform: translateZ(0);
     backface-visibility: hidden;
   }
-  
+
   /* Smooth scroll pour le container */
   #carousel-container {
     scroll-behavior: smooth;
   }
-  
+
   /* Suppression de l'animation du filtre bleu vertical au hover */
   #footer-carousel-track > div.group > .absolute.inset-0.pointer-events-none {
     transition: none;
     will-change: auto;
   }
-  #footer-carousel-track > div.group:hover > .absolute.inset-0.pointer-events-none {
+  #footer-carousel-track
+    > div.group:hover
+    > .absolute.inset-0.pointer-events-none {
     transform: none;
   }
 
@@ -346,13 +466,18 @@
     transition: opacity 0.1s;
   }
   .tennis-ball-effect::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 12px;
     width: 18px;
     height: 7px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.04) 60%, transparent 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.04) 60%,
+      transparent 100%
+    );
     filter: blur(3px);
     border-radius: 4px;
     opacity: 0.08;
@@ -361,56 +486,170 @@
     animation: none;
   }
   .group:hover .tennis-ball-effect {
-    animation: tennisBallMove 0.55s cubic-bezier(0.77,0,0.18,1);
+    animation: tennisBallMove 0.55s cubic-bezier(0.77, 0, 0.18, 1);
     opacity: 1;
   }
-  
+
   @keyframes tennisBallMove {
-    0% { left: -40px; top: 32px; opacity: 0; }
-    5% { left: -20px; top: 33px; opacity: 1; }
-    10% { left: 10px; top: 35px; opacity: 1; }
-    15% { left: 30px; top: 37px; opacity: 1; }
-    20% { left: 50px; top: 40px; opacity: 1; }
-    25% { left: 70px; top: 45px; opacity: 1; }
-    30% { left: 90px; top: 52px; opacity: 1; }
-    35% { left: 110px; top: 62px; opacity: 1; }
-    40% { left: 130px; top: 75px; opacity: 1; }
-    45% { left: 145px; top: 90px; opacity: 1; }
-    50% { left: 160px; top: 110px; opacity: 1; }
-    55% { left: 175px; top: 150px; opacity: 1; }
-    60% { left: 190px; top: 200px; opacity: 1; }
-    65% { left: 205px; top: 180px; opacity: 1; }
-    70% { left: 220px; top: 165px; opacity: 1; }
-    75% { left: 240px; top: 150px; opacity: 1; }
-    80% { left: 260px; top: 130px; opacity: 1; }
-    85% { left: 285px; top: 100px; opacity: 1; }
-    90% { left: 320px; top: 70px; opacity: 1; }
-    95% { left: 370px; top: 50px; opacity: 1; }
-    98% { left: 390px; top: 48px; opacity: 1; }
-    100% { left: calc(100% + 40px); top: 48px; opacity: 0; }
+    0% {
+      left: -40px;
+      top: 32px;
+      opacity: 0;
+    }
+    5% {
+      left: -20px;
+      top: 33px;
+      opacity: 1;
+    }
+    10% {
+      left: 10px;
+      top: 35px;
+      opacity: 1;
+    }
+    15% {
+      left: 30px;
+      top: 37px;
+      opacity: 1;
+    }
+    20% {
+      left: 50px;
+      top: 40px;
+      opacity: 1;
+    }
+    25% {
+      left: 70px;
+      top: 45px;
+      opacity: 1;
+    }
+    30% {
+      left: 90px;
+      top: 52px;
+      opacity: 1;
+    }
+    35% {
+      left: 110px;
+      top: 62px;
+      opacity: 1;
+    }
+    40% {
+      left: 130px;
+      top: 75px;
+      opacity: 1;
+    }
+    45% {
+      left: 145px;
+      top: 90px;
+      opacity: 1;
+    }
+    50% {
+      left: 160px;
+      top: 110px;
+      opacity: 1;
+    }
+    55% {
+      left: 175px;
+      top: 150px;
+      opacity: 1;
+    }
+    60% {
+      left: 190px;
+      top: 200px;
+      opacity: 1;
+    }
+    65% {
+      left: 205px;
+      top: 180px;
+      opacity: 1;
+    }
+    70% {
+      left: 220px;
+      top: 165px;
+      opacity: 1;
+    }
+    75% {
+      left: 240px;
+      top: 150px;
+      opacity: 1;
+    }
+    80% {
+      left: 260px;
+      top: 130px;
+      opacity: 1;
+    }
+    85% {
+      left: 285px;
+      top: 100px;
+      opacity: 1;
+    }
+    90% {
+      left: 320px;
+      top: 70px;
+      opacity: 1;
+    }
+    95% {
+      left: 370px;
+      top: 50px;
+      opacity: 1;
+    }
+    98% {
+      left: 390px;
+      top: 48px;
+      opacity: 1;
+    }
+    100% {
+      left: calc(100% + 40px);
+      top: 48px;
+      opacity: 0;
+    }
   }
 
   /* Effet gradient sur le texte du titre au hover de la card */
   #footer-carousel-track > div.group:hover span {
-    background: linear-gradient(90deg, #12EF97 0%, #008AEF 100%);
+    background: linear-gradient(90deg, #12ef97 0%, #008aef 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    filter: drop-shadow(0 2px 6px rgba(18,239,151,0.18));
-    transition: background 0.3s, filter 0.3s;
+    filter: drop-shadow(0 2px 6px rgba(18, 239, 151, 0.18));
+    transition:
+      background 0.3s,
+      filter 0.3s;
   }
 
   .group:hover .tennis-ball-effect::after {
-    animation: tennisBallBlurMove 0.55s cubic-bezier(0.77,0,0.18,1);
+    animation: tennisBallBlurMove 0.55s cubic-bezier(0.77, 0, 0.18, 1);
     opacity: 0.12;
   }
   @keyframes tennisBallBlurMove {
-    0% { left: 0; top: 32px; width: 10px; }
-    20% { left: 0; top: 40px; width: 18px; }
-    40% { left: 0; top: 75px; width: 30px; }
-    60% { left: 0; top: 200px; width: 30px; }
-    80% { left: 0; top: 100px; width: 18px; }
-    100% { left: 0; top: 48px; width: 0px; }
+    0% {
+      left: 0;
+      top: 32px;
+      width: 10px;
+    }
+    20% {
+      left: 0;
+      top: 40px;
+      width: 18px;
+    }
+    40% {
+      left: 0;
+      top: 75px;
+      width: 30px;
+    }
+    60% {
+      left: 0;
+      top: 200px;
+      width: 30px;
+    }
+    80% {
+      left: 0;
+      top: 100px;
+      width: 18px;
+    }
+    100% {
+      left: 0;
+      top: 48px;
+      width: 0px;
+    }
   }
 </style>

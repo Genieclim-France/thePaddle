@@ -1,0 +1,725 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout title="Règlement intérieur - The Padel">
+  <!-- Header visuel avec image de fond et overlay dégradé -->
+  <header
+    class="relative h-80 sm:h-[420px] md:h-[480px] lg:h-[540px] flex items-center justify-center overflow-hidden"
+  >
+    <img
+      src="/header-reglement.png"
+      alt="Terrain de padel"
+      class="absolute inset-0 w-full h-full object-cover object-center z-0"
+    />
+    <div
+      class="absolute inset-0 z-10"
+      style="background: linear-gradient(to top, rgba(0,0,0,0.55) 70%, rgba(0,0,0,0.15) 100%);"
+    >
+    </div>
+    <div class="relative z-20 w-full text-center pb-6 px-2 sm:px-0">
+      <h1
+        class="text-2xl sm:text-4xl md:text-5xl font-impact font-bold uppercase mt-16 tracking-wide text-white mb-2 drop-shadow-lg"
+      >
+        Règlement intérieur
+      </h1>
+      <p
+        class="text-white font-raleway text-xs sm:text-base md:text-lg max-w-2xl mx-auto opacity-90 drop-shadow-sm"
+      >
+        Retrouvez ici l'ensemble des règles de vie, d'accès et d'utilisation de
+        notre centre THE PADEL.<br class="hidden sm:inline" /> Le respect de ce règlement
+        est indispensable pour garantir la sécurité, le confort et la convivialité
+        de tous.
+      </p>
+    </div>
+  </header>
+
+  <main
+    class="bg-white min-h-screen py-8 px-2 sm:px-4 max-w-xl md:mx-auto lg:max-w-7xl mx-4"
+  >
+    <section class="mb-10">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Préambule
+      </h2>
+      <div
+        class="font-raleway text-gray-800 text-base sm:text-lg leading-relaxed space-y-3"
+      >
+        <p>
+          Le présent règlement intérieur a pour objet de définir les règles
+          applicables aux clients de THE PADEL, situé au 212 avenue du Maréchal
+          Leclerc 33130 BEGLES. Il vise à assurer la sécurité, le confort, et le
+          bon déroulement des activités proposées par THE PADEL, qui incluent la
+          location de terrains de padel, la vente de matériel de padel, et la
+          restauration sur place.
+        </p>
+        <p>
+          Ce règlement n'est pas applicable au personnel de THE PADEL qui est
+          soumis à une règlementation spécifique. Il s'applique dans toute
+          l'enceinte du Centre, à l'intérieur comme à l'extérieur, y compris sur
+          le parking, les espaces verts, les terrasses et autres dégagements.
+        </p>
+        <p>
+          Le présent règlement est consultable sur la page Internet <a
+            href="https://www.thepadel.fr/reglement"
+            class="text-blue-600 underline">www.thepadel.fr/reglement</a
+          > grâce à un QR Code affiché à l'accueil de THE PADEL. Il est également
+          consultable sur demande auprès du responsable. Chacun est censé en avoir
+          pris connaissance dès son arrivée au Centre.
+        </p>
+        <p>
+          La fréquentation de THE PADEL, par les utilisateurs, implique le
+          respect du présent règlement intérieur.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 1 – Accès aux installations
+      </h2>
+      <ul
+        class="list-none pl-0 font-raleway text-gray-800 text-base sm:text-lg leading-relaxed space-y-2"
+      >
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>Les installations de THE PADEL sont accessibles aux clients
+          ayant effectué une réservation ou un achat de produits/services.
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>Les réservations peuvent être effectuées en ligne, par
+          téléphone, ou directement sur place, sous réserve des disponibilités.
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>Toute personne accédant aux installations doit se conformer
+          aux consignes du personnel de THE PADEL.
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 2 – Conditions de réservation
+      </h2>
+      <ul
+        class="list-none pl-0 font-raleway text-gray-800 text-base sm:text-lg leading-relaxed space-y-2"
+      >
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>La réservation d'un terrain de padel peut être effectuée en
+          ligne, par téléphone ou sur place. Les clients doivent respecter les
+          horaires réservés. Tout retard supérieur à 15 minutes peut entraîner
+          l'annulation de la réservation sans remboursement.
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>L'annulation ou la modification d'une réservation doit être
+          effectuée au moins 24 heures à l'avance. En cas de non-respect de ce
+          délai, THE PADEL se réserve le droit de facturer tout ou partie de la
+          prestation.
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>Le paiement des réservations peut être effectué en ligne lors
+          de la réservation, ou sur place avant l'utilisation des installations.
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 3 – Règles générales de vie dans l'enceinte
+      </h2>
+      <div
+        class="font-raleway text-gray-800 text-base sm:text-lg leading-relaxed space-y-3"
+      >
+        <p>
+          Il est demandé à chacun de respecter les règles élémentaires de vie en
+          collectivité telles que de ramasser et/ou de mettre dans les poubelles
+          prévues à cet effet les bouteilles d'eau, papiers et autres détritus.
+        </p>
+        <div
+          class="flex items-start gap-3 bg-red-50 border-l-4 border-red-400 rounded-md p-3 my-3"
+        >
+          <svg
+            class="w-5 h-5 text-red-400 flex-shrink-0 mt-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M18.364 5.636l-1.414 1.414M6.343 17.657l-1.414-1.414M5.636 5.636l1.414 1.414M17.657 17.657l1.414-1.414M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path></svg
+          >
+          <div>
+            <div class="font-semibold text-red-700 mb-1">
+              Interdits dans l'enceinte :
+            </div>
+            <ul
+              class="list-none pl-0 space-y-1 text-red-700 text-base sm:text-lg"
+            >
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Cracher par terre
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Jeter les chewing-gums ou mégots par terre
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Uriner ou faire ses besoins ailleurs que dans les WC
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Crier ou utiliser les cônes de signalisation en
+                porte-voix
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Écouter de la musique sans autorisation
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Fixer des caméras sur les filets ou poteaux
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Jouer avec des balles hors zones prévues
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Courir dans les espaces communs hors zones de jeux
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Écrire ou dégrader le matériel et équipements
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Pénétrer dans les espaces privés ou réservés
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-red-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Utiliser les sorties de secours hors urgence
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Les enfants ne doivent pas être laissés sans surveillance et ne
+          doivent pas emprunter les terrains disponibles s'ils n'ont pas été
+          réservés pour eux.
+        </p>
+        <div
+          class="flex items-start gap-3 bg-yellow-50 border-l-4 border-yellow-400 rounded-md p-3 my-3"
+        >
+          <svg
+            class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z"
+            ></path></svg
+          >
+          <div>
+            <div class="font-semibold text-yellow-700 mb-1">
+              Respect des personnes et du lieu :
+            </div>
+            <ul
+              class="list-none pl-0 space-y-1 text-yellow-700 text-base sm:text-lg"
+            >
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-yellow-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Tout comportement irrespectueux, violence ou dégradation
+                est interdit et sanctionné.
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-yellow-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Le torse nu et/ou pieds-nu n'est pas autorisé dans THE
+                PADEL.
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span
+                  class="inline-flex w-1.5 h-1.5 rounded-full bg-yellow-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+                ></span>Respect de la laïcité : pas d'affichage de convictions
+                personnelles.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white p-6">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 4 – Règles d'utilisation des terrains
+      </h2>
+      <ul
+        class="list-disc pl-6 font-raleway text-gray-800 leading-relaxed space-y-2"
+      >
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>Le port de vêtements de sport appropriés et de chaussures
+          adaptées est obligatoire sur les terrains de padel. L'utilisation de
+          chaussures non marquantes est exigée.
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>Les joueurs sont tenus de respecter les règles du jeu et de
+          faire preuve de fair-play en toutes circonstances.
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>Il est strictement interdit de fumer, de consommer de l'alcool
+          ou des substances illicites sur les terrains de padel.
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>Les terrains doivent être laissés en bon état après
+          utilisation. Tout matériel endommagé doit être signalé immédiatement
+          au personnel de THE PADEL.
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-blue-700 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>Afin de ne pas ajouter d'autres nuisances sonores, nous vous
+          demandons de prendre conscience et de :
+        </li>
+      </ul>
+      <ul class="list-none pl-8 mt-1 space-y-1">
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-green-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>Ne pas crier trop fort pendant les échanges.
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-green-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>D'éviter les "mots disgracieux"... (Parfois c'est dur dans le
+          feu de l'action !)
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-green-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>De ne pas apporter une source sonore extérieure (enceinte
+          musicale etc…)
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-green-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>De prendre conscience que le bruit peut déranger les autres
+          joueurs sur les terrains annexes.
+        </li>
+        <li class="flex items-baseline gap-2">
+          <span
+            class="inline-flex w-1.5 h-1.5 rounded-full bg-green-500 ring-1 ring-white mt-0.5 flex-shrink-0"
+          ></span>De faire preuve de courtoisie.
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-6">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 5 – Stationnement - parking
+      </h2>
+      <ul
+        class="list-disc pl-6 font-raleway text-gray-800 leading-relaxed space-y-2"
+      >
+        <li>
+          Les utilisateurs du Centre peuvent stationner leur véhicule sur le
+          parking de THE PADEL (durant les horaires d'ouverture et sous réserve
+          des places disponibles). Le parking est réservé à la clientèle.
+        </li>
+        <li>
+          Les véhicules à deux roues (motorisés ou non, y compris les
+          trottinettes) doivent être stationnés sur le parking, ou à défaut
+          d'emplacements spécifiques, sur l'espace public. Ils sont strictement
+          interdits à l'intérieur du complexe dans les zones de jeux dans les
+          couloirs ou dans tous autres espaces du Centre.
+        </li>
+        <li>
+          Il est demandé de respecter les emplacements matérialisés. Il est
+          interdit de stationner sur les emplacements réservés aux personnes à
+          mobilité réduite sauf à être soi-même titulaire d'une carte spéciale.
+          Il est également interdit de stationner sur les dégagements de
+          sécurité et notamment devant les portes de secours ou les accès
+          d'échelles de secours.
+        </li>
+        <li>
+          Les véhicules restent sous la seule responsabilité de leur
+          propriétaire, THE PADEL n'assurant aucune surveillance. Il est donc
+          demandé à chacun de veiller à verrouiller son véhicule et de ne
+          laisser aucun objet apparent pour éviter de susciter les vols. La
+          direction de THE PADEL décline toute responsabilité en cas de vol ou
+          de dégradation survenu dans le parking.
+        </li>
+        <li>
+          Les rassemblements ainsi que les nuisances sonores sont interdits sur
+          le parking. La consommation de boissons et de denrées alimentaires y
+          est également interdite.
+        </li>
+        <li>
+          Les usagers s'engagent à rouler avec prudence et à suivre les
+          signalisations implantées sur le parking. THE PADEL ne peut être tenu
+          pour responsable, de manière directe ou indirecte, notamment en cas
+          d'accident sur le parking.
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-6">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 6 – Vente de matériel
+      </h2>
+      <ul
+        class="list-disc pl-6 font-raleway text-gray-800 leading-relaxed space-y-2"
+      >
+        <li>
+          Le matériel de padel proposé à la vente (raquettes, balles,
+          accessoires, etc.) est disponible dans l'espace de vente de THE PADEL.
+        </li>
+        <li>
+          Les achats peuvent être effectués directement sur place. Tous les
+          produits sont payables comptant.
+        </li>
+        <li>
+          En cas de défaut constaté sur un produit acheté, le client dispose
+          d'un délai de 14 jours pour signaler le problème et demander un
+          échange ou un remboursement, sous réserve des conditions de retour
+          applicables.
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-6">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 7 – Restauration
+      </h2>
+      <ul
+        class="list-disc pl-6 font-raleway text-gray-800 leading-relaxed space-y-2"
+      >
+        <li>
+          THE PADEL dispose d'un espace bar et restauration rapide type Snacking
+          appelé « Club House », composé d'un espace intérieur et d'une
+          terrasse. Les clients sont invités à consommer les produits
+          alimentaires dans les zones désignées à cet effet.
+        </li>
+        <li>
+          Il est interdit d'introduire des aliments ou des boissons venant de
+          l'extérieur dans les installations de THE PADEL, sauf autorisation
+          expresse de la direction.
+        </li>
+        <li>
+          Les clients sont tenus de respecter les consignes de propreté et de
+          jeter leurs déchets dans les poubelles prévues à cet effet.
+        </li>
+        <li>
+          THE PADEL ne fait pas de crédits, les consommations doivent être
+          réglées au bar.
+        </li>
+        <li>
+          Le respect des lieux et du matériel est impératif, il est notamment
+          interdit de mettre les pieds sur les sièges ou les tables, de s'assoir
+          sur les tables, de s'allonger sur les canapés. Les utilisateurs ont la
+          stricte interdiction d'accéder aux réserves ou de passer derrière le
+          bar ou la caisse.
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-6">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 8 – Hygiène et sécurité
+      </h2>
+      <ul
+        class="list-disc pl-6 font-raleway text-gray-800 leading-relaxed space-y-2"
+      >
+        <li>
+          THE PADEL met en place toutes les mesures nécessaires pour assurer la
+          sécurité et l'hygiène des installations. Les clients sont tenus de
+          respecter les consignes affichées et celles données par le personnel.
+        </li>
+        <li>
+          Toute personne présentant des signes d'une maladie contagieuse ou
+          d'une blessure sérieuse peut se voir refuser l'accès aux installations
+          pour des raisons de sécurité.
+        </li>
+        <li>
+          Les objets de valeur apportés par les clients sont sous leur
+          responsabilité. THE PADEL décline toute responsabilité en cas de vol,
+          perte ou détérioration des effets personnels dans ses locaux.
+        </li>
+        <li>
+          Les vestiaires sont réservés aux seuls utilisateurs ayant payé pour
+          une prestation sportive. L'accès est interdit à tout visiteur ou
+          accompagnateur. Il est demandé aux parents de ne pas laisser leurs
+          enfants sans surveillance en cas d'utilisation des vestiaires.
+        </li>
+        <li>
+          Les vestiaires sont le seul lieu approprié pour changer de vêtements.
+          Il est demandé à chacun d'utiliser le vestiaire qui lui est réservé.
+          THE PADEL se réserve la possibilité de limiter l'accès aux douches ou
+          d'en réserver l'accès à certaines personnes sans avoir à en justifier
+          la raison. La nudité est autorisée dans les vestiaires et dans les
+          douches. Par conséquent en entrant dans les vestiaires, tout
+          utilisateur accepte de côtoyer des personnes nues. Il est vivement
+          recommandé aux personnes sensibles n'acceptant pas la nudité de ne pas
+          se rendre aux vestiaires.
+        </li>
+        <li>
+          Pour des raisons d'hygiène, il n'est pas autorisé de :
+          <ul class="list-disc pl-8 mt-1">
+            <li>Se raser dans les vestiaires,</li>
+            <li>D'uriner ou de faire ses besoins dans les douches.</li>
+          </ul>
+        </li>
+        <li>
+          Il est obligatoire de s'essuyer le corps et les pieds en sortant des
+          douches, THE PADEL décline toute responsabilité en cas de chute. Il
+          est interdit de courir dans les vestiaires.
+        </li>
+        <li>
+          Les lieux doivent être laissés propres et aucun détritus ne doit être
+          laissé dans les vestiaires.
+        </li>
+        <li>
+          Tout utilisateur, est invité à signaler immédiatement aux membres du
+          personnel de THE PADEL, tout problème ou tout dégât constaté à son
+          arrivée au vestiaire ou en cours d'occupation afin que le personnel
+          puisse y remédier le plus rapidement possible.
+        </li>
+        <li>
+          Les utilisateurs prendront soin de ne laisser aucun objet personnel
+          sans surveillance, il est conseillé de ne pas apporter d'objets de
+          valeur ou de sommes conséquentes d'argent liquide.
+        </li>
+        <li>
+          Il est interdit de stocker des effets personnels quels qu'ils soient
+          sur les terrains, notamment dans les buts.
+        </li>
+        <li>
+          Les coffres et casiers ne font l'objet d'aucune surveillance
+          particulière. Tout utilisateur à titre individuel est responsable des
+          effets personnels qu'il entrepose dans les coffres et/ou les casiers
+          (même si le casier est fermé à clé). Les coffres et casiers doivent
+          être entièrement vidés et laissés ouverts en fin de séance. Chaque
+          soir, à la fermeture du Centre, tous les coffres et casiers sont
+          ouverts et vidés par le personnel du Centre, sans aucune garantie pour
+          les utilisateurs concernant leurs effets personnels oubliés.
+        </li>
+        <li>
+          Objets perdus : Si l'objet est trouvé, il sera déposé dans le panier
+          des objets trouvés au niveau de l'accueil ou sera déposé à la
+          réception s'il s'agit d'un objet de valeur. Tout objet ou vêtement non
+          réclamé sous quinzaine sera évacué de THE PADEL sans recours possible
+          par l'utilisateur.
+        </li>
+        <li>
+          Des plans d'évacuation et un bornage lumineux sont en place dans les
+          locaux THE PADEL pour assurer l'évacuation en cas de problème tel
+          qu'un incendie. Il est demandé aux utilisateurs d'en prendre
+          connaissance. Il est demandé de respecter scrupuleusement les
+          directives et indications du responsable du centre et du personnel en
+          cas de procédure d'évacuation et de se diriger sans paniquer vers le
+          point de rassemblement qui se situe sur le parking du Centre.
+        </li>
+        <li>
+          Il est interdit de toucher les extincteurs ou de les actionner sans
+          raison valable. L'alarme incendie ne doit être actionnée qu'en
+          situation de danger nécessitant l'évacuation des utilisateurs du
+          Centre. Toute action injustifiée sera sanctionnée par une exclusion
+          définitive.
+        </li>
+        <li>
+          Le libre accès aux portes de secours, cages d'escalier, locaux
+          techniques et équipements de sécurités doit toujours être assuré.
+        </li>
+        <li>
+          Le Centre ne dispose pas de salle d'infirmerie, cependant une trousse
+          de premiers secours ainsi qu'un défibrillateur sont disponibles auprès
+          du responsable du Centre au niveau de l'accueil ou du bar.
+        </li>
+        <li>
+          En cas d'accident ou de malaise, les services de secours devront être
+          immédiatement prévenus (Pompiers téléphone au 18 et SAMU téléphone au
+          15). Les mouvements de blessés sont généralement à proscrire, il est
+          donc demandé aux utilisateurs de ne pas interagir sur les personnes
+          blessées, sauf à disposer des compétences médicales (brevet de
+          secourisme, diplôme de médecine…).
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-6">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 9 – Comportement des clients
+      </h2>
+      <ul
+        class="list-disc pl-6 font-raleway text-gray-800 leading-relaxed space-y-2"
+      >
+        <li>
+          Les clients doivent adopter un comportement respectueux envers les
+          autres utilisateurs et le personnel de THE PADEL. Tout comportement
+          violent, abusif ou non respectueux pourra entraîner une expulsion
+          immédiate sans remboursement des sommes versées.
+        </li>
+        <li>
+          Les enfants de moins de 12 ans doivent être accompagnés et sous la
+          surveillance d'un adulte en permanence.
+        </li>
+        <li>
+          Les animaux ne sont pas admis dans les installations, à l'exception
+          des chiens guides d'aveugles.
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-6">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 10 – Assurance et Responsabilité
+      </h2>
+      <ul
+        class="list-disc pl-6 font-raleway text-gray-800 leading-relaxed space-y-2"
+      >
+        <li>
+          THE PADEL décline toute responsabilité en cas d'accident ou de
+          blessure résultant d'une utilisation non conforme des équipements ou
+          d'une négligence de la part des clients.
+        </li>
+        <li>
+          Toute personne jouant chez THE PADEL doit vérifier auparavant qu'elle
+          est assurée pour la pratique sportive et doit valider auprès de son
+          médecin traitant qu'elle est apte à faire la pratique de ce sport. THE
+          PADEL ne pourra être tenu responsable de tout problème ou accident qui
+          pourrait arriver lors d'une partie de padel sur les terrains réservés.
+        </li>
+        <li>
+          En cas de dégradation volontaire ou accidentelle des installations ou
+          du matériel de THE PADEL, le client responsable devra rembourser les
+          frais de réparation ou de remplacement.
+        </li>
+        <li>
+          THE PADEL décline toute responsabilité en cas de vol, détérioration ou
+          dommage quelconque pouvant être subi par le bien ou les personnes à
+          l'intérieur de ses installations.
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-6">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 11 – Vidéosurveillance et données personnelles
+      </h2>
+      <ul
+        class="list-disc pl-6 font-raleway text-gray-800 leading-relaxed space-y-2"
+      >
+        <li>
+          THE PADEL est surveillé par des caméras de vidéosurveillance. Il n'y a
+          pas de caméras dans les vestiaires et les toilettes. L'accès aux
+          images est protégé par un mot de passe. Aucune consultation des images
+          ne sera accordée à des personnes privées, sauf lorsqu'elles sont
+          elles-mêmes sur l'image. Aucune copie ne sera délivrée.
+        </li>
+        <li>
+          Pour des raisons évidentes de respect des données personnelles des
+          clients et des dispositions légales en vigueur, les membres du
+          personnel du Centre ont la stricte interdiction de communiquer les
+          coordonnées (téléphonique, mail ou autre) d'un client du Centre à
+          quiconque en ferait la demande. Aucune information de ce type ne sera
+          donc donnée aux clients.
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-6">
+      <h2
+        class="text-lg sm:text-xl font-impact text-blue-700 mb-3 flex items-center gap-2 border-l-4 border-blue-500 pl-4 uppercase tracking-wide"
+      >
+        Article 12 – Dispositions finales
+      </h2>
+      <ul
+        class="list-disc pl-6 font-raleway text-gray-800 leading-relaxed space-y-2"
+      >
+        <li>
+          Le présent règlement intérieur est affiché dans les locaux de THE
+          PADEL et est également disponible sur le site internet.
+        </li>
+        <li>
+          THE PADEL se réserve le droit de modifier le présent règlement à tout
+          moment. Les modifications seront applicables immédiatement après leur
+          publication.
+        </li>
+        <li>
+          Toute infraction au présent règlement peut entraîner l'exclusion
+          temporaire ou définitive des installations de THE PADEL, sans
+          remboursement des sommes versées.
+        </li>
+        <li>
+          Toutes les dispositions légales et réglementaires d'ordre public
+          primeront sur le présent règlement intérieur et s'imposeront aux
+          utilisateurs.
+        </li>
+      </ul>
+    </section>
+
+    <div class="text-center text-xs text-gray-400 mt-12 font-raleway">
+      Dernière mise à jour : Juin 2025
+    </div>
+  </main>
+</Layout>
